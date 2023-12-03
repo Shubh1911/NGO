@@ -1,0 +1,471 @@
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+$extra-extra-large-screen:1400px;
+
+@media only screen and (min-width: #{$large-screen}) and (max-width: #{$extra-large-screen}) {
+    .container{
+    max-width: 960px;
+        margin: 0 auto;
+    }
+    main{
+    .banner{
+        img{
+            border-radius: 0% 0% 0% 17%;
+        }
+            .banner__content{
+
+                width:55%;
+  }
+}
+.contact__us{
+  .contact__content--div{
+    .left__div{
+      gap: 15px;
+
+      .left__div--heading{
+        padding-right: 0px !important;
+      }
+    }
+    .right__div{
+      img{
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}
+  }
+  .about__us{
+    .card{
+      padding: 50px 10px !important;
+    }
+  }
+}
+
+
+
+
+
+  @media only screen and (min-width: #{$extra-large-screen}) and (max-width: #{$extra-extra-large-screen}) {
+    
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+
+    }
+    main{
+    .banner{
+        img{
+            border-radius: 0% 0% 0% 30%;
+        }
+        .container{
+            .banner__content{
+
+                max-width:50%;
+}
+  }
+}
+  }
+}
+
+@media only screen and (min-width: #{$medium-screen}) and (max-width: #{$large-screen}) {
+    
+.container{
+  max-width: 720px;
+}
+h1 {
+  font-size: 48px; /* Adjust h1 font size for tablets */
+}
+
+h2 {
+  font-size: 32px; /* Adjust h2 font size for tablets */
+}
+
+h3 {
+  font-size: 24px; /* Adjust h3 font size for tablets */
+}
+
+h4 {
+  font-size: 18px; /* Adjust h4 font size for tablets */
+}
+
+p {
+  font-size: 14px; /* Adjust paragraph font size for tablets */
+}
+.banner__content{
+  width: 372px !important;
+}
+.horizontal__list{
+  gap: 16px !important;
+  ul{
+    gap: 20px !important;
+  }
+}
+.our__plans{
+.card__div{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  
+}
+}
+.left__div{
+  .left__div--heading{
+    padding-right: 50px !important;
+  }
+}
+.about__us{
+  .content__heading{
+    padding: 0px 105px !important;
+  }
+}
+.brand__div{
+  .client__logo{
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    gap: 54px;
+    .logo{
+      max-width:33%;
+    }
+  }
+}
+.counter{
+  flex-wrap: wrap;
+  gap: 75px;
+  padding: 5rem 0rem !important;
+  .counter__text{
+border-right: none !important;
+  }
+}
+.blog{
+  .blog__cards{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.our__project{
+  .heading{
+    padding:0px 100px !important;
+  }
+}
+.footer__content{
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: space-around !important;
+  .footer__contact{
+    text-align: center;
+    p{
+      padding: 0 !important;
+    }
+  }
+}
+}
+
+@media only screen and (min-width: #{$small-screen}) and (max-width: #{$medium-screen}) {
+  .container{
+    max-width: 540px;
+  
+  h1 {
+    font-size: 36px; /* Adjust h1 font size for tablets */
+  }
+  
+  h2 {
+    font-size: 28px; /* Adjust h2 font size for tablets */
+  }
+  
+  h3 {
+    font-size: 22px; /* Adjust h3 font size for tablets */
+  }
+  
+  h4 {
+    font-size: 18px; /* Adjust h4 font size for tablets */
+  }
+  
+  p {
+    font-size: 16px; /* Adjust paragraph font size for tablets */
+  }
+    .horizontal__list{
+      padding: 10px 20px;
+      display: none;
+      position: absolute;
+      background-color:rgba(256,256,256,0.5);
+      right: 0px;
+      top: 60px;
+      gap: 30px !important;
+      z-index: 9;
+  flex-direction: column;
+  .nav__list{
+flex-direction: column;
+text-align: center;
+gap: 16px !important;
+  }
+  .search__icon{
+    display:flex;
+    justify-content: center;
+  }
+    }
+    #toggleBtn{
+        display: block;
+        cursor: pointer;
+    }
+  }
+  .banner{
+    .banner__content{
+      max-width: 70%;
+    }
+  }
+  .card__div{
+    flex-direction: column;
+    align-items: center;
+    .card{
+      width: 60% !important;
+      gap: 20px !important;
+
+    }
+  }
+  .contact__content--div{
+    flex-direction: column;
+    align-items: center;
+    .left__div,.right__div{
+      width: 100% !important;
+      align-items: center;
+      .left__div--heading{
+        padding: 0px !important;
+        text-align: center;
+
+      }
+    }
+  }
+  .about__us{
+    .content__heading{
+      padding: 0px 105px !important;
+    }
+  }
+
+  .brand__div{
+    .client__logo{
+      flex-wrap: wrap;
+      justify-content: space-around !important;
+      gap: 108px;
+      .logo{
+        max-width:33%;
+      }
+    }
+  }
+
+  .our__project{
+    .heading{
+      padding:0px 50px !important;
+    }
+  }
+  .blog__cards,.blog__heading{
+    width: 100% !important;
+    flex-direction: column;
+    .blog__card{
+    width: 100% !important;
+    img{
+      width: 100%;
+    }
+    .blog__card--bottom{
+     .blog__card--button {
+      img{
+        height: 50px;
+        width: 50px;
+      }
+    }
+    }
+    }
+  }
+  .counter{
+    padding: 0 !important;
+    flex-direction: column;
+    gap: 40px;
+    .counter__text{
+      width: 100% !important;
+      padding: 0 !important;
+      border: none !important;
+    }
+  }
+  .footer__content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .footer__icon{
+      width: 50% !important;
+      align-items: center;
+      gap: 20px !important;
+      .logo{
+        gap: 10px !important;
+      }
+    }
+    .footer__contact{
+      text-align: center;
+      p{
+        padding: 0 !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container{
+    max-width: 100%;
+  
+  h1 {
+    font-size: 36px; /* Adjust h1 font size for tablets */
+  }
+  
+  h2 {
+    font-size: 28px; /* Adjust h2 font size for tablets */
+  }
+  
+  h3 {
+    font-size: 22px; /* Adjust h3 font size for tablets */
+  }
+  
+  h4 {
+    font-size: 18px; /* Adjust h4 font size for tablets */
+  }
+  
+  p {
+    font-size: 16px; /* Adjust paragraph font size for tablets */
+  }
+    .horizontal__list{
+      padding: 10px 20px;
+      display: none;
+      position: absolute;
+      background-color:rgba(256,256,256,0.5);
+      right: 0px;
+      top: 60px;
+      gap: 30px !important;
+      z-index: 9;
+  flex-direction: column;
+  .nav__list{
+flex-direction: column;
+text-align: center;
+gap: 16px !important;
+  }
+  .search__icon{
+    display:flex;
+    justify-content: center;
+  }
+    }
+    #toggleBtn{
+        display: block;
+        cursor: pointer;
+    }
+  }
+  .banner{
+    .banner__image{
+      height: 400px;
+    }
+    .banner__content{
+      max-width: 100%;
+    }
+  }
+  .card__div{
+    flex-direction: column;
+    align-items: center;
+    .card{
+      width: 60% !important;
+      gap: 20px !important;
+
+    }
+  }
+  .contact__content--div{
+    flex-direction: column;
+    align-items: center;
+    .left__div,.right__div{
+      width: 100% !important;
+      align-items: center;
+      .left__div--heading{
+        padding: 0px !important;
+        text-align: center;
+
+      }
+    }
+  }
+  .about__us{
+    .content__heading{
+      padding: 0px 80px !important;
+    }
+  }
+  .brand__div{
+    .client__logo{
+      flex-wrap: wrap;
+      justify-content: space-around !important;
+      gap: 108px;
+      .logo{
+        max-width:33%;
+      }
+    }
+  }
+  .our__project{
+    .heading,.project__card{
+  width: 100% !important;
+}
+  }
+  .blog__cards,.blog__heading{
+    width: 100% !important;
+    flex-direction: column;
+    .blog__card{
+    width: 100% !important;
+    img{
+      width: 100%;
+    }
+    .blog__card--bottom{
+     .blog__card--button {
+      img{
+        height: 50px;
+        width: 50px;
+      }
+    }
+    }
+    }
+  }
+  .our__project{
+    .heading{
+      padding: 0 !important;
+    }
+  }
+  .counter{
+    padding: 0 !important;
+    flex-direction: column;
+    gap: 40px;
+    .counter__text{
+      width: 100% !important;
+      padding: 0 !important;
+      border: none !important;
+    }
+  }
+  .footer__content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .footer__icon{
+      width: 50% !important;
+      align-items: center;
+      gap: 20px !important;
+      .logo{
+        gap: 10px !important;
+      }
+    }
+    .footer__contact{
+      text-align: center;
+      p{
+        padding: 0 !important;
+      }
+    }
+  } 
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+/* Styling for the footer */
+@use './typography';
+
+footer {
+  background-color:black;
+  margin-top: 134px;
+  color: white;
+
+  /* Styles for the content container within the footer */
+  .container {
+
+    /* Styles for the main content of the footer */
+    .footer__content {
+justify-content: space-between;
+      /* Styles for the lists in the footer */
+      .footer__lists {
+        width: 33%;
+        justify-content: space-around;
+
+        /* Styles for the pages and services sections */
+        .footer__pages,
+        .footer__services {
+          ul {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            /* Styles for list items within the footer */
+            li {
+              a {
+                color:white;
+                font-size: 14px;
+                font-family: Roboto;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+      /* Styles for the icon section in the footer */
+      .footer__icon {
+        width: 33%;
+        flex-direction: column;
+
+        /* Styles for the logo within the icon section */
+        .logo {
+          align-items: center;
+        }
+
+        p {
+          margin: 18px 0px 31px 0px;
+        }
+
+        /* Styles for the icons within the icon section */
+        .icons {
+          gap: 54px;
+        }
+
+        #twitter {
+          height: 16px;
+        }
+
+        #linkedin {
+          height: 17px;
+        }
+      }
+
+      /* Styles for the contact section in the footer */
+      .footer__contact {
+        width: 33%;
+
+        /* Styles for the contact data within the contact section */
+        &__data {
+          justify-content: space-between;
+          flex-direction: column;
+          gap: 50px;
+
+          /* Styles for paragraphs within the contact data */
+          p {
+            padding-right: 45px;
+          }
+        }
+      }
+
+      form{
+        gap: 10px;
+        input{
+          margin: 0 !important;
+          padding: 1rem 0.5rem;
+          background: black;
+          border: 1px solid white;
+
+        }
+       button{
+        display: inline-flex;
+        padding: 16px 32px;
+        border-radius: 4px;
+        background:white;
+        backdrop-filter: blur(40px);
+        color:black;
+        border: none;
+       }
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+/* css resets starts */
+/* Box sizing rules */
+@use './typography';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+ul{
+    list-style-type: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+html,body{
+    height: 100%;
+}
+body {
+  text-rendering: optimizeSpeed;
+  line-height: normal;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture,svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a{
+    text-decoration: none;
+}
+// section{
+//   margin-top: 134px;
+// }
+p{
+  font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+}
+.home__heading{
+
+font-family: Roboto;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%;
+}
+h1{
+  
+
+/* H1 */
+font-family: Roboto;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%;
+}
+
+h2{
+  
+
+  /* H2 */
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+
+h3{
+  
+
+/* H3 */
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 42px */
+}
+
+h4{
+
+
+/* H4 */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 30px */
+}
+
+h5{
+  color: #1D2130;
+
+/* H5 */
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 21px */
+}
+h6{
+
+
+/* H6 */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 18px */
+}
+.display__flex{
+  display: flex;
+}
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+}

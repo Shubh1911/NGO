@@ -1,0 +1,114 @@
+/* Styling for header */
+@use './typography';
+
+header {
+    // background-image: url(../images/BG\ Image.png);
+    // height: 802px;
+    // background-size: 100%;
+    .slider{
+        height: 802px;
+    .slide1{
+         background-image: url('../images/BG\ Image.png');
+    height: 802px;
+    background-size: 100%;
+    }
+    .slide2{
+        background-image: url('../images/BG\ Image.png');
+   height: 802px;
+   background-size: 100%;
+   }
+   .slide3{
+    background-image: url('../images/BG\ Image.png');
+height: 802px;
+background-size: 100%;
+}
+    }
+    .container{
+    position: relative;
+      .content{
+        position: absolute;
+        top: -802px;
+    /* Navigation styles */
+    nav {
+        justify-content: space-between; 
+       
+        padding: 18px 0px;
+
+        
+        /* Horizontal list styles */
+        .horizontal__list {
+            gap: 113px;
+            align-items: center;
+            ul {
+                gap: 40px; 
+                li{
+                    a{
+                        
+                        font-family: Roboto;
+                        color: black;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+                    }
+                }
+            }
+            .contact__div{
+                gap: 12px;
+                &--text{
+                    b{
+                        font-family: Roboto;
+                    }
+                    p{
+                     font-family: Roboto-Light;
+                     font-weight: 400; 
+                     font-size: 14px;  
+                    }
+                }
+            }
+        }
+        .btn{
+            padding: 12px 32px;
+             border-radius: 4px;
+            background: var(--Primary-text, #1D2130);
+            color: white;
+        }
+    }
+}
+
+}
+    .header__content{
+        margin-top: 178px;
+        .left__div{
+            width: 50%;
+            gap: 48px;
+            flex-direction: column;
+            .btn{
+                display: inline-flex;
+                padding: 16px 32px;
+                border-radius: 4px;
+                background: var(--foundation-primary-red-500, #B4252D);
+                backdrop-filter: blur(40px);
+                color: white;
+            }
+        }
+        .right__div{
+            align-items: end;
+            &--content{
+                margin: 0 auto;
+                gap: 19px;
+                flex-direction: column;
+                width: 50%;
+                b{
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: Roboto;
+
+                }
+                p{
+                    line-height: 160%;
+                }
+            }
+        }
+    }
+}
