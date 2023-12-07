@@ -3,7 +3,7 @@
 
 footer {
   background-color:black;
-  margin-top: 134px;
+  padding:96px 0 ;
   color: white;
 
   /* Styles for the content container within the footer */
@@ -21,10 +21,10 @@ justify-content: space-between;
         .footer__pages,
         .footer__services {
           ul {
-            margin-top: 10px;
+          padding-top: 24px;
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 24px;
 
             /* Styles for list items within the footer */
             li {
@@ -36,37 +36,17 @@ justify-content: space-between;
               }
             }
           }
+          .logo__text{
+gap: 10px;
+          }
+        }
+        .footer__services1{
+          margin: 0px 60px;
         }
       }
 
       /* Styles for the icon section in the footer */
-      .footer__icon {
-        width: 33%;
-        flex-direction: column;
-
-        /* Styles for the logo within the icon section */
-        .logo {
-          align-items: center;
-        }
-
-        p {
-          margin: 18px 0px 31px 0px;
-        }
-
-        /* Styles for the icons within the icon section */
-        .icons {
-          gap: 54px;
-        }
-
-        #twitter {
-          height: 16px;
-        }
-
-        #linkedin {
-          height: 17px;
-        }
-      }
-
+    
       /* Styles for the contact section in the footer */
       .footer__contact {
         width: 33%;

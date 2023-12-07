@@ -20,7 +20,141 @@ main{
     .about__us--section{
         gap: 86px;
         &--left{
+            position: relative;
             width: 37.5%;
+
+            .state {
+                position: absolute;
+                transition: transform 2s;
+                p {
+                    display: none;
+                }
+
+            .style-1 {
+                background-color: #1A7C5F;
+                width: 13.436px;
+                height: 13.436px;
+            }
+            .style-2 {
+                width: 9.791px;
+                height: 9.791px;
+                background-color: #F05E28;
+            }
+            .style-3 {
+                width: 10.564px;
+                height: 10.564px;
+                background-color: #1A7C5F;
+            }
+            .style-4 {
+                width: 16px;
+                height: 16px;
+                background-color: #B4252D;
+            }
+            .style-5 {
+                width: 9.564px;
+                height: 9.564px;
+                background-color: #B4252D;
+            }
+            .style-6 {
+                width: 11.773px;
+                height: 11.773px;
+                background-color: #DC9C1A;
+            }
+            .style-7 {
+                width: 6px;
+                height: 6px;
+                background-color: #1A7C5F;
+            }
+            .style-8 {
+                width: 8.564px;
+                height: 8.564px;
+                background-color: #B4252D;
+            }
+            .style-9 {
+                width: 13.436px;
+                height: 13.436px;
+                background-color: #DC9C1A;
+            }
+            .style-10 {
+                width: 11.773px;
+                height: 11.773px;
+                background-color: #1A7C5F;
+            }
+            .style-11 {
+                width: 17.832px;
+                height: 17.832px;
+                background-color: #F05E28;
+            }
+
+            div {
+                border-radius: 50%;
+                border: 2px solid white;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+            &:hover {
+                .style {
+                    transform: scale(1.5);
+                    p {
+                        position: relative;
+                        bottom: -8px;
+                        right: 20px;
+                        cursor: pointer;
+                        width: max-content;
+                        background-color:purple;
+                        border-radius: 4px;
+                        color: white;
+                        padding: 4px 6px;
+                        scale: .7;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .state-1 {
+            top: 17%;
+            left: 8%;
+        }
+        .state-2 {
+            top: 20%;
+            left: 35%;
+        }
+        .state-3 {
+            right: 40%;
+            top: 9%;
+        }
+        .state-4 {
+            top: 35%;
+            left: 14%;
+        }
+        .state-5 {
+            top: 35%;
+            right: 20%;
+        }
+        .state-6 {
+            top: 40%;
+            right: 44%;
+        }
+        .state-7 {
+            top: 48.3%;
+            left: 39%;
+        }
+        .state-8 {
+            bottom: 40%;
+            right: 35%;
+        }
+        .state-9 {
+            bottom: 27%;
+            right: 30%;
+        }
+        .state-10 {
+            bottom: 24%;
+            left: 48%;
+        }
+        .state-11 {
+            bottom: 9%;
+            right: 41%;
+        }
+    
 
         }
      &--right{
@@ -110,7 +244,8 @@ main{
         &__cards{
             gap: 24px;
             &--card{
-            
+                padding: 40px 119px;
+            position: relative;
                 align-items: center;
                 justify-content: space-between;
                 border-radius: 20px;
@@ -118,6 +253,9 @@ background: var(--foundation-text-color-text-color-50, #E8E9EA);
                 display: flex;
                 width: 50%;
             .date{
+                position: absolute;
+                top: 0;
+                left: 0;
                 padding: 10px;
                 text-align: center;
                 border-radius: 0px 0px 30px 0px;
@@ -185,7 +323,7 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
     }
 }
 
-.services{
+.we__do{
     padding: 96px 0;
     margin: 107px 0 114px 0;
     background: var(--foundation-secondary-yellow-50, #FCF5E8);
@@ -223,6 +361,7 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
 .latest__blog--div{
 
     &--heading{
+        justify-content:normal;
         gap: 18px;
         .dot__line{
             height: 15px;
@@ -243,11 +382,14 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
 &--card{
     width: 33.3%;
         .card--text{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
             position: relative;
             margin: 0 auto;
             top: -30px;
             width: 90%;
-            padding: 30px;
+            padding:45px 30px;
             border-radius: 10px;
 background: var(--foundation-secondary-yellow-50, #FCF5E8);
 
@@ -268,6 +410,14 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
 .image__text{
     gap: 24px;
 }
+.btn{
+    display: inline-flex;
+        padding: 16px 32px;
+        border-radius: 4px;
+        background: var(--foundation-primary-red-500, #B4252D);
+        backdrop-filter: blur(40px);
+        color: white;
+}
         }
         }
     }
@@ -282,6 +432,7 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
         padding: 93px 238px 92px 238px;
         color: white;
     background-image: url('../images/unsplash_cVEOh_JJmEE.png');
+    background-repeat: no-repeat;
 
     .buttons{
         justify-content: center;
@@ -302,7 +453,26 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
     }
     }
 }
+.testimonial__section{
+.testimonial__div{
+    background-image: url('../images/world-map\ 1.png');
+    &--content{
+align-items: center;
+    .center__div{
+        padding: 119px 42px;
+        &--img{
+         border-right: 1px solid gray;
+            width: 65%;
+        
+        
+        }
+        &--para{
+            padding: 0px 50px;
+        }
+    }
+}
+}
 
-
+}
 
 }
