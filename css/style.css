@@ -164,7 +164,7 @@ h6 {
 
 /* Styling for header */
 header .slider .slide1, header .slider .slide2, header .slider .slide3 {
-  background-image: url("../images/BG Image.png");
+  background-image: url("../images/BannerImage.webp");
   height: 802px;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -272,6 +272,9 @@ header .header__content .right__div--content p {
 }
 
 /* main starts from here */
+main .services {
+  margin: 27px 0px 59px 0px;
+}
 main .services .services__cards {
   gap: 90px;
 }
@@ -474,6 +477,9 @@ main .about__us--section--right--content .btn {
           backdrop-filter: blur(40px);
   color: white;
 }
+main .our-Supporters {
+  margin: 64px 0px 146px 0px;
+}
 main .our-Supporters--div-top {
   position: relative;
 }
@@ -490,6 +496,29 @@ main .our-Supporters--div-top::after {
 main .our-Supporters--div-bottom {
   margin: 2rem 0rem;
   justify-content: space-between;
+}
+main .events {
+  margin: 58px 0px 88px 0px;
+}
+main .events .container {
+  flex-direction: column;
+  gap: 60px;
+}
+main .events__heading {
+  position: relative;
+}
+main .events__heading h2 {
+  font-size: 40px;
+}
+main .events__heading::after {
+  content: "";
+  height: 1px;
+  width: 82%;
+  right: 0;
+  top: 22px;
+  color: black;
+  background: #cdb8b8;
+  position: absolute;
 }
 main .events__cards {
   gap: 24px;
@@ -513,8 +542,24 @@ main .events__cards--card .date {
   border-radius: 0px 0px 30px 0px;
   background: var(--foundation-text-color-text-color-100, #B9BABF);
 }
+main .projects .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 main .projects .projects__top {
+  gap: 24px;
   width: 50%;
+}
+main .projects .projects__top hr {
+  width: 72px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: black;
+}
+main .projects .projects__top--content {
+  gap: 32px;
+  flex-direction: column;
 }
 main .projects .bottom .cards {
   gap: 24px;
@@ -544,15 +589,15 @@ main .projects .bottom .cards .card .btn {
   color: black;
 }
 main .projects .bottom .cards .card1 {
-  background-image: url("../images/unsplash_1-aA2Fadydc.png");
+  background-image: url("../images/Storiesbg1.webp");
   background-repeat: no-repeat;
 }
 main .projects .bottom .cards .card2 {
-  background-image: url("../images/unsplash_iIGovKRty8g.png");
+  background-image: url("../images/Storiesbh3.webp");
   background-repeat: no-repeat;
 }
 main .projects .bottom .cards .card3 {
-  background-image: url("../images/unsplash_cVEOh_JJmEE (1).png");
+  background-image: url("../images/storiesbg3.webp");
   background-repeat: no-repeat;
 }
 main .we__do {
@@ -585,6 +630,10 @@ main .we__do__section--left--content--bottom {
 }
 main .we__do__section--left--content--bottom--div {
   gap: 24px;
+}
+main .latest__blog--div {
+  flex-direction: column;
+  gap: 56px;
 }
 main .latest__blog--div--heading {
   justify-content: normal;
@@ -648,7 +697,7 @@ main .latest__blog--div--content--cards--card .card--text .btn {
 main .donate .background__div {
   padding: 93px 238px 92px 238px;
   color: white;
-  background-image: url("../images/unsplash_cVEOh_JJmEE.png");
+  background-image: url("../images/ctaimage.webp");
   background-repeat: no-repeat;
 }
 main .donate .background__div .buttons {
@@ -669,8 +718,11 @@ main .donate .background__div .buttons .btn1 {
   background: white;
   color: black;
 }
+main .testimonial__section {
+  margin: 77px 0px 67px 0px;
+}
 main .testimonial__section .testimonial__div {
-  background-image: url("../images/world-map 1.png");
+  background-image: url("../images/worldmap.webp");
 }
 main .testimonial__section .testimonial__div--content {
   align-items: center;
@@ -726,24 +778,32 @@ footer .container .footer__content .footer__lists .footer__pages .logo__text,
 footer .container .footer__content .footer__lists .footer__services .logo__text {
   gap: 10px;
 }
+footer .container .footer__content .footer__lists .footer__pages .logo__text img,
+footer .container .footer__content .footer__lists .footer__services .logo__text img {
+  margin-top: 10px;
+}
 footer .container .footer__content .footer__lists .footer__services1 {
   margin: 0px 60px;
 }
 footer .container .footer__content .footer__contact {
   width: 33%;
-  /* Styles for the contact data within the contact section */
-}
-footer .container .footer__content .footer__contact__data {
-  justify-content: space-between;
   flex-direction: column;
-  gap: 50px;
-  /* Styles for paragraphs within the contact data */
+  gap: 25px;
 }
-footer .container .footer__content .footer__contact__data p {
-  padding-right: 45px;
+footer .container .footer__content .footer__contact p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
 }
-footer .container .footer__content form {
-  gap: 10px;
+footer .container .footer__content .footer__contact p::after {
+  content: "";
+  height: 3px;
+  width: 40px;
+  left: 150px;
+  top: 10px;
+  color: black;
+  background: #cdb8b8;
+  position: absolute;
 }
 footer .container .footer__content form input {
   margin: 0 !important;
@@ -754,7 +814,9 @@ footer .container .footer__content form input {
 footer .container .footer__content form button {
   display: inline-flex;
   padding: 16px 32px;
-  border-radius: 4px;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-size: 16px;
   background: white;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);

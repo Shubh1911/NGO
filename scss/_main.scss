@@ -5,6 +5,7 @@ main{
     
 
     .services{
+        margin: 27px 0px 59px 0px ;
         .services__cards{
             gap: 90px;
             &--card{
@@ -221,6 +222,7 @@ main{
     }
 }
   .our-Supporters{
+    margin: 64px 0px 146px 0px;
 &--div-top{
     position: relative;
     &::after{
@@ -241,6 +243,28 @@ main{
   }
 
     .events{
+        .container{
+            flex-direction: column;
+            gap: 60px;
+        }
+        margin: 58px 0px 88px 0px;
+        &__heading{
+            position: relative;
+            h2{
+                font-size: 40px;
+
+            }
+            &::after{
+                content: "";
+                height: 1px;
+                width: 82%;
+                right: 0;
+                top: 22px;
+                color: black;
+                background: #cdb8b8;
+                position: absolute;
+            }
+        }
         &__cards{
             gap: 24px;
             &--card{
@@ -271,9 +295,27 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
    
 
 .projects{
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
    .projects__top
     {
+        gap: 24px;
      width: 50%; 
+     hr{
+        width: 72px;
+        height: 3px;
+        margin-top: 5px;
+        background-color: black;
+     }
+     &--content{
+        gap: 32px;
+        flex-direction: column;
+     }
+     
 }
 
     .bottom{
@@ -306,17 +348,17 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
             }
             .card1{
                
-                background-image: url('../images/unsplash_1-aA2Fadydc.png');
+                background-image: url('../images/Storiesbg1.webp');
                 background-repeat: no-repeat;
             }
             .card2{
               
-                background-image: url('../images/unsplash_iIGovKRty8g.png');
+                background-image: url('../images/Storiesbh3.webp');
                 background-repeat: no-repeat;
             }
             .card3{
                
-                background-image: url('../images/unsplash_cVEOh_JJmEE\ \(1\).png');
+                background-image: url('../images/storiesbg3.webp');
                 background-repeat: no-repeat;
             }
         }
@@ -359,7 +401,8 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
 
 
 .latest__blog--div{
-
+flex-direction: column;
+gap: 56px;
     &--heading{
         justify-content:normal;
         gap: 18px;
@@ -431,7 +474,7 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
     .background__div{
         padding: 93px 238px 92px 238px;
         color: white;
-    background-image: url('../images/unsplash_cVEOh_JJmEE.png');
+    background-image: url('../images/ctaimage.webp');
     background-repeat: no-repeat;
 
     .buttons{
@@ -454,8 +497,9 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
     }
 }
 .testimonial__section{
+    margin: 77px 0px 67px 0px;
 .testimonial__div{
-    background-image: url('../images/world-map\ 1.png');
+    background-image: url('../images/worldmap.webp');
     &--content{
 align-items: center;
     .center__div{

@@ -38,6 +38,9 @@ justify-content: space-between;
           }
           .logo__text{
 gap: 10px;
+img{
+  margin-top: 10px;
+}
           }
         }
         .footer__services1{
@@ -50,22 +53,27 @@ gap: 10px;
       /* Styles for the contact section in the footer */
       .footer__contact {
         width: 33%;
+        flex-direction: column;
+        gap: 25px;
+        p{
+          letter-spacing: 2px;
+text-transform: uppercase;position: relative;
+&::after{
+  content: "";
+  height: 3px;
+  width: 40px;
+  left: 150px;
+  top: 10px;
+  color: black;
+  background: #cdb8b8;
+  position: absolute;
+}
 
-        /* Styles for the contact data within the contact section */
-        &__data {
-          justify-content: space-between;
-          flex-direction: column;
-          gap: 50px;
-
-          /* Styles for paragraphs within the contact data */
-          p {
-            padding-right: 45px;
-          }
         }
+      
       }
 
       form{
-        gap: 10px;
         input{
           margin: 0 !important;
           padding: 1rem 0.5rem;
@@ -76,7 +84,9 @@ gap: 10px;
        button{
         display: inline-flex;
         padding: 16px 32px;
-        border-radius: 4px;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-size: 16px;
         background:white;
         backdrop-filter: blur(40px);
         color:black;
