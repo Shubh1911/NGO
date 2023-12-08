@@ -1,7 +1,7 @@
 @use './variables' as *;
 
 /* main starts from here */ 
-main{
+.main{
     
 
     .services{
@@ -436,6 +436,9 @@ gap: 56px;
             border-radius: 10px;
 background: var(--foundation-secondary-yellow-50, #FCF5E8);
 
+h5{
+    font-size: 20px;
+}
 .date{
     position: absolute;
     right: 0;
@@ -452,6 +455,8 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
 
 .image__text{
     gap: 24px;
+
+
 }
 .btn{
     display: inline-flex;
@@ -506,9 +511,7 @@ align-items: center;
         padding: 119px 42px;
         &--img{
          border-right: 1px solid gray;
-            width: 65%;
-        
-        
+            width: 65%;   
         }
         &--para{
             padding: 0px 50px;

@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="NGO website">
-  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- CSS File with Cache-Control and Integrity -->
+  <link rel="stylesheet" href="./css/style.css" type="text/css" as="style" crossorigin="anonymous" integrity="your-integrity-hash">
+
+  <!-- Other CSS Files -->
   <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="stylesheet" href="./css/slick.css">
+  
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></noscript>
   
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/slider.js"></script>
-  <script src="./js/nav.js"></script>
+  <script src="./js/script.js" defer></script>
+  <script src="./js/slick.min.js" defer></script>
+  <script src="./js/slider.js" defer></script>
+  <script src="./js/nav.js" defer></script>
+
   <title>Document</title>
+
+
+  
 </head>
 
 <body>
@@ -103,6 +112,8 @@
       </div>
     </div>
   </header>
+
+  
   <main class="main">
     <section class="services">
       <div class="container">
@@ -459,7 +470,7 @@
                 <div class="card--text">
                   <div class="date">
                     <h2>10</h2>
-                    <h4>APR</h4>
+                    <p>APR</p>
                   </div>
                   <div class="image__text  display__flex">
                     <div class="image__text--left  display__flex">
@@ -472,7 +483,7 @@
                     </div>
                   </div>
 
-                  <h4>Online legal advice for asylum seekers in Greece</h4>
+                  <h5>Online legal advice for asylum seekers in Greece</h5>
                   <a href="#">
                     <div class="btn">
                       Read More
@@ -486,7 +497,7 @@
                 <div class="card--text">
                   <div class="date">
                     <h2>10</h2>
-                    <h4>APR</h4>
+                    <p>APR</p>
                   </div>
                   <div class="image__text  display__flex">
                     <div class="image__text--left  display__flex">
@@ -499,7 +510,7 @@
                     </div>
                   </div>
 
-                  <h4>Online legal advice for asylum seekers in Greece</h4>
+                  <h5>Online legal advice for asylum seekers in Greece</h5>
                   <a href="#">
                     <div class="btn">
                       Read More
@@ -513,7 +524,7 @@
                 <div class="card--text">
                   <div class="date">
                     <h2>10</h2>
-                    <h4>APR</h4>
+                    <p>APR</p>
                   </div>
                   <div class="image__text  display__flex">
                     <div class="image__text--left  display__flex">
@@ -522,11 +533,11 @@
                     </div>
                     <div class="image__text--right  display__flex">
                       <img src="./images/fi-rr-man-head.png" alt="head"  width="24" height="25">
-                      <p>Posted by author</p>
+                      <h5>Posted by author</h5>
                     </div>
                   </div>
 
-                  <h4>Online legal advice for asylum seekers in Greece</h4>
+                  <p>Online legal advice for asylum seekers in Greece</p>
                   <a href="#">
                     <div class="btn">
                       Read More
@@ -565,11 +576,11 @@
               <h2>Our customer success stories about us</h2>
               <div class="testimonial__div--content   display__flex">
                 <div class="left__arrow">
-                  <img src="./images/Arrow button.svg" alt="">
+                  <img src="./images/Arrow button.svg" alt="arrow left" width="56" height="57">
                 </div>
                 <div class="center__div  display__flex">
                   <div class="center__div--img">
-                    <div><img src="./images/tesimonailuser.webp" alt=""></div>
+                    <div><img src="./images/tesimonailuser.webp" alt="man image" width="103" height="106"></div>
                     <h3>Smith Murthy</h3>
                     <p>DIRECTOR</p>
                   </div>
@@ -580,7 +591,7 @@
                   </div>
                 </div>
                 <div class="right__Arrow">
-                  <img src="./images/Arrow button (1).svg" alt="">
+                  <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
                 </div>
               </div>
             </div>
@@ -628,9 +639,9 @@
               <p>Next Event</p>
               <h3>A day with our wonderful children</h3>
             </div>
-            <a href="#">
+            <a href="#-right">
               <div class="btn__arrow">
-                <img src="./images/Arrow button (1).svg" alt="">
+                <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
               </div>
             </a>
           </div>
@@ -645,9 +656,9 @@
               <p>Next Event</p>
               <h3>A day with our wonderful children</h3>
             </div>
-            <a href="#">
+            <a href="#-left">
               <div class="btn__arrow">
-                <img src="./images/Arrow button (1).svg" alt="">
+                <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
               </div>
             </a>
           </div>
@@ -661,7 +672,7 @@
     <div class="container">
       <div class="footer__content  display__flex">
         <div class="logo">
-          <img src="./images/footerlogo.png">
+          <img src="./images/footerlogo.png" alt="footer logo" width="108" height="45">
         </div>
 
 
@@ -685,27 +696,27 @@
               <li><a href="#">Blod</a></li>
             </ul>
           </div>
-          <div class="footer__services">
+          <div class="contact__div  display__flex">
             <p>Contact</p>
-            <ul>
+           
               <div class="logo__text display__flex">
-                <img src="./images/fi-rr-envelope-plus.svg" alt="">
+                <img src="./images/fi-rr-envelope-plus.svg" alt="mail"  width="18" height="19">
                 <p>info@africanno.com</p>
               </div>
               <div class="display__flex">
-                <img src="./images/fi-rr-call-incoming.svg" alt="">
+                <img src="./images/fi-rr-call-incoming.svg" alt="call" width="18" height="19">
                 <p>+234 090323430130</p>
               </div>
               <div>
                 <p>Connect</p>
-                <div class=" logo__text display__flex">
-                  <img src="./images/Vector.svg" alt="">
-                  <img src="./images/jam_facebook-circle.svg" alt="">
-                  <img src="./images/fe_instagram.svg" alt="">
-                  <img src="./images/typcn_social-linkedin-circular.svg" alt="">
+                <div class=" icons display__flex">
+                  <img src="./images/Vector.svg" alt="x" width="24" height="25">
+                  <img src="./images/jam_facebook-circle.svg" alt="facebook" width="24" height="25">
+                  <img src="./images/fe_instagram.svg" alt="insta" width="24" height="25">
+                  <img src="./images/typcn_social-linkedin-circular.svg" alt="linkedin" width="24" height="25">
                 </div>
               </div>
-            </ul>
+
           </div>
 
         </div>
@@ -713,7 +724,7 @@
           <p>Newsletter</p>
           <h3>Subscribe to get latest updates</h3>
           <form action="submit" class="display__flex">
-            <input type="email" id="email" name="email" required  placeholder="Email">
+            <input type="email" id="emailid" name="emailid" required  placeholder="Email">
             <button>subscribe</button>
           </form>
         </div>
