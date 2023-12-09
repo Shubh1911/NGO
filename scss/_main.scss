@@ -295,11 +295,11 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
    
 
 .projects{
-    .container{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
+    // .container{
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 50px;
+    // }
 
    .projects__top
     {
@@ -320,6 +320,7 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
 
     .bottom{
         .cards{
+            overflow: hidden;
             .slick-track{
                 display: flex;
                 gap: 24px;
@@ -328,7 +329,7 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
 
             .card{
                 height: 350px;
-                width: 400px;
+                width: 385px !important;
                 padding: 40px 36px 40px 36px;
                 color: white;
                 border-radius: 25px;

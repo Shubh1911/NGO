@@ -2,15 +2,13 @@
 /* Box sizing rules */
 @font-face {
   font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
-  font-family: Roboto-Light;
-  src: url(../fonts/Roboto/Roboto-Light.ttf);
-}
-@font-face {
-  font-family: Roboto-Black;
-  src: url(../fonts/Roboto/Roboto-Black.ttf);
+  font-family: Woff;
+  src: url("../fonts/slick.woff");
+  font-display: swap;
 }
 *,
 *::before,
@@ -167,7 +165,6 @@ header .slider .slide1, header .slider .slide2, header .slider .slide3 {
   background-image: url("../images/BannerImage.webp");
   height: 802px;
   background-size: 100%;
-  width: 100%;
   background-repeat: no-repeat;
 }
 header .container {
@@ -223,7 +220,7 @@ header .container .content nav .horizontal__list .contact__div--text b {
   font-family: Roboto;
 }
 header .container .content nav .horizontal__list .contact__div--text p {
-  font-family: Roboto-Light;
+  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
 }
@@ -543,11 +540,6 @@ header .header__content .right__div--content p {
   border-radius: 0px 0px 30px 0px;
   background: var(--foundation-text-color-text-color-100, #B9BABF);
 }
-.main .projects .container {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
 .main .projects .projects__top {
   gap: 24px;
   width: 50%;
@@ -563,6 +555,7 @@ header .header__content .right__div--content p {
   flex-direction: column;
 }
 .main .projects .bottom .cards {
+  overflow: hidden;
   gap: 24px;
 }
 .main .projects .bottom .cards .slick-track {
@@ -571,7 +564,7 @@ header .header__content .right__div--content p {
 }
 .main .projects .bottom .cards .card {
   height: 350px;
-  width: 400px;
+  width: 385px !important;
   padding: 40px 36px 40px 36px;
   color: white;
   border-radius: 25px;
@@ -902,6 +895,14 @@ footer .container .footer__content form button {
   header .nav__list li a {
     color: white !important;
   }
+  header .nav__list .submenu {
+    position: relative !important;
+    background-color: black !important;
+    top: 0px !important;
+  }
+  header .nav__list .submenu li a {
+    color: white;
+  }
   header #toggleBtn {
     display: block !important;
     cursor: pointer;
@@ -986,20 +987,23 @@ footer .container .footer__content form button {
     margin-top: 50px !important;
   }
   header .container .content {
-    top: -500px;
+    top: -540px;
+  }
+  header .container .content nav {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  header .container .content nav .logo {
+    width: 50% !important;
+  }
+  header .container .content nav .fa-solid {
+    padding-right: 20px;
   }
   header .home__heading {
     font-size: 40px;
   }
-  .services__cards {
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
   .services__cards--card {
     width: 100% !important;
-  }
-  .about__us--section {
-    flex-wrap: wrap;
   }
   .about__us--section--left, .about__us--section--right {
     width: 100% !important;
@@ -1008,32 +1012,20 @@ footer .container .footer__content form button {
     width: 100% !important;
   }
   .our-Supporters--div-bottom {
-    flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
   }
   .our-Supporters--div-bottom div {
     width: 33% !important;
   }
-  .we__do__section {
-    flex-wrap: wrap;
-  }
   .we__do__section--left {
     width: 100% !important;
-  }
-  .latest__blog--div--content--cards {
-    flex-wrap: wrap;
-    justify-content: center;
   }
   .latest__blog--div--content--cards--card {
     width: 60% !important;
   }
   .background__div {
-    padding: 20px 0px !important;
-    text-align: center;
-  }
-  .background__div h2 {
-    font-size: 30px;
+    padding: 20px !important;
   }
   .background__div .buttons {
     flex-direction: column;
@@ -1047,11 +1039,7 @@ footer .container .footer__content form button {
   .projects__top {
     width: 100% !important;
   }
-  .footer__content {
-    flex-wrap: wrap;
-  }
   .footer__content .footer__lists {
-    gap: 40px;
     width: 100% !important;
   }
   .footer__content .footer__contact {

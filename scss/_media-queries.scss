@@ -111,6 +111,17 @@ li{
   a{
     color: white !important;
   }
+
+}
+.submenu{
+  position: relative !important;
+  background-color: black !important;
+  top: 0px !important;
+  li{
+    a{
+      color: white;
+    }
+  }
 }
 
   }
@@ -225,7 +236,18 @@ width: 100%  !important;
       }
       .container{
         .content{
-          top: -500px;
+          top: -540px;
+          nav{
+            flex-wrap: wrap;
+            gap: 30px;
+            .logo{
+              width: 50% !important;
+            }
+            .fa-solid{
+              padding-right: 20px;
+
+            }
+          }
         }
     
     }
@@ -237,8 +259,6 @@ width: 100%  !important;
 
     .services{
       &__cards{
-        justify-content: space-between;
-        flex-wrap: wrap;
         &--card{
           width: 100%  !important;
         }
@@ -247,7 +267,6 @@ width: 100%  !important;
 
     .about__us{
       &--section{
-        flex-wrap: wrap;
       &--left,&--right {
 width: 100%  !important;
 
@@ -259,7 +278,6 @@ width: 100%  !important;
     }
 
 .our-Supporters--div-bottom{
-  flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
   div{
@@ -270,16 +288,12 @@ width: 100%  !important;
 
 
 .we__do__section{
-  flex-wrap: wrap;
   &--left{
     width: 100% !important;
   }
 }
 .latest__blog--div--content{
 &--cards{
-
-  flex-wrap: wrap;
-  justify-content: center;
   &--card{
     width: 60% !important;
   }
@@ -288,11 +302,7 @@ width: 100%  !important;
 }
 
 .background__div{
-  h2{
-    font-size: 30px;
-  }
-  padding: 20px 0px  !important;
-  text-align: center;
+  padding: 20px !important;
   .buttons{
     flex-direction: column;
   }
@@ -308,9 +318,7 @@ width: 100%  !important;
 }
 
 .footer__content{
-  flex-wrap: wrap;
   .footer__lists{
-    gap: 40px;
     width: 100% !important;
   }
   .footer__contact{
@@ -318,5 +326,4 @@ width: 100%  !important;
   }
 
 }
-
   }
