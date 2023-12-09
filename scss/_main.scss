@@ -1,9 +1,6 @@
 @use './variables' as *;
 
 /* main starts from here */ 
-.main{
-    
-
     .services{
         margin: 27px 0px 59px 0px ;
         .services__cards{
@@ -321,7 +318,7 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
     .bottom{
         .cards{
             overflow: hidden;
-            
+
             .slick-track{
                 display: flex;
                 gap: 24px;
@@ -524,4 +521,3 @@ align-items: center;
 
 }
 
-}
