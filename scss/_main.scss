@@ -292,11 +292,12 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
    
 
 .projects{
-    // .container{
-    //     display: flex;
-    //     flex-direction: column;
-    //     gap: 50px;
-    // }
+    overflow: hidden;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
 
    .projects__top
     {
@@ -317,8 +318,9 @@ background: var(--foundation-text-color-text-color-100, #B9BABF);
 
     .bottom{
         .cards{
-            overflow: hidden;
-
+            .slick-list{
+                overflow: visible;
+            }
             .slick-track{
                 display: flex;
                 gap: 24px;
@@ -435,7 +437,8 @@ gap: 56px;
             border-radius: 10px;
 background: var(--foundation-secondary-yellow-50, #FCF5E8);
 
-h5{
+.para{
+    font-weight: 700;
     font-size: 20px;
 }
 .date{

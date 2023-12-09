@@ -161,36 +161,30 @@ h6 {
 }
 
 /* Styling for header */
-header .slider .slide1, header .slider .slide2, header .slider .slide3 {
-  background-image: url("../images/BannerImage.webp");
-  height: 802px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-header .container {
+header {
   position: relative;
 }
-header .container .content {
+header .data {
+  width: 100%;
   position: absolute;
-  top: -802px;
-  /* Navigation styles */
+  top: 0;
 }
-header .container .content nav {
+header .data .container .content nav {
   align-items: center;
   padding: 18px 0px;
   /* Horizontal list styles */
 }
-header .container .content nav .horizontal__list {
+header .data .container .content nav .horizontal__list {
   gap: 113px;
   align-items: center;
 }
-header .container .content nav .horizontal__list ul {
+header .data .container .content nav .horizontal__list ul {
   gap: 40px;
 }
-header .container .content nav .horizontal__list ul li {
+header .data .container .content nav .horizontal__list ul li {
   position: relative;
 }
-header .container .content nav .horizontal__list ul li a {
+header .data .container .content nav .horizontal__list ul li a {
   font-family: Roboto;
   color: black;
   font-size: 16px;
@@ -198,7 +192,7 @@ header .container .content nav .horizontal__list ul li a {
   font-weight: 500;
   line-height: normal;
 }
-header .container .content nav .horizontal__list ul li .submenu {
+header .data .container .content nav .horizontal__list ul li .submenu {
   background-color: white;
   opacity: 0.5;
   display: flex;
@@ -207,35 +201,36 @@ header .container .content nav .horizontal__list ul li .submenu {
   top: 30px;
   display: none;
 }
-header .container .content nav .horizontal__list ul li {
+header .data .container .content nav .horizontal__list ul li {
   margin: 10px 10px;
 }
-header .container .content nav .horizontal__list ul li:hover .submenu {
+header .data .container .content nav .horizontal__list ul li:hover .submenu {
   display: block;
 }
-header .container .content nav .horizontal__list .contact__div {
+header .data .container .content nav .horizontal__list .contact__div {
   gap: 12px;
 }
-header .container .content nav .horizontal__list .contact__div--text b {
+header .data .container .content nav .horizontal__list .contact__div--text b {
   font-family: Roboto;
 }
-header .container .content nav .horizontal__list .contact__div--text p {
+header .data .container .content nav .horizontal__list .contact__div--text p {
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
 }
-header .container .content nav .btn {
+header .data .container .content nav .btn {
   padding: 12px 32px;
   border-radius: 4px;
   background: var(--Primary-text, #1D2130);
   color: white;
 }
-header .container .content nav #toggleBtn {
+header .data .container .content nav #toggleBtn {
   display: none;
   font-size: 30px;
 }
 header .header__content {
   margin-top: 178px;
+  justify-content: normal;
 }
 header .header__content .left__div {
   width: 50%;
@@ -544,6 +539,14 @@ header .header__content .right__div--content p {
   background: var(--foundation-text-color-text-color-100, #B9BABF);
 }
 
+.projects {
+  overflow: hidden;
+}
+.projects .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .projects .projects__top {
   gap: 24px;
   width: 50%;
@@ -559,8 +562,10 @@ header .header__content .right__div--content p {
   flex-direction: column;
 }
 .projects .bottom .cards {
-  overflow: hidden;
   gap: 24px;
+}
+.projects .bottom .cards .slick-list {
+  overflow: visible;
 }
 .projects .bottom .cards .slick-track {
   display: flex;
@@ -668,7 +673,8 @@ header .header__content .right__div--content p {
   border-radius: 10px;
   background: var(--foundation-secondary-yellow-50, #FCF5E8);
 }
-.latest__blog--div--content--cards--card .card--text h5 {
+.latest__blog--div--content--cards--card .card--text .para {
+  font-weight: 700;
   font-size: 20px;
 }
 .latest__blog--div--content--cards--card .card--text .date {
@@ -828,26 +834,18 @@ footer .container .footer__content form button {
   border: none;
 }
 
-@media only screen and (max-width: 1350px) {
-  .container {
-    max-width: 1200px;
+@media only screen and (max-width: 1100px) {
+  .nav__list {
+    gap: 5px !important;
   }
-  header .slider .slide1, header .slider .slide2, header .slider .slide3 {
-    height: 700px;
+  .horizontal__list {
+    gap: 20px !important;
   }
-  header .container .content {
-    top: -700px;
+  .carousel {
+    padding-top: 600px !important;
   }
-}
-@media only screen and (max-width: 1200px) {
-  .container {
-    max-width: 100%;
-  }
-  header .slider .slide1, header .slider .slide2, header .slider .slide3 {
-    height: 650px;
-  }
-  header .container .content {
-    top: -650px;
+  .header__content {
+    margin-top: 100px !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -872,14 +870,8 @@ footer .container .footer__content form button {
   .container {
     max-width: 560px;
   }
-  header .slider .slide1, header .slider .slide2, header .slider .slide3 {
-    height: 650px;
-  }
-  header .container .content {
-    top: -650px;
-  }
   header .header__content {
-    margin-top: 100px !important;
+    margin-top: 70px !important;
   }
   header .header__content .left__div {
     width: 100% !important;
@@ -980,44 +972,29 @@ footer .container .footer__content form button {
   .footer__content .footer__contact {
     width: 100% !important;
   }
-  .footer__content .footer__services1 {
-    margin: 0px 30px !important;
-  }
 }
 @media only screen and (max-width: 560px) {
+  .width {
+    width: 100% !important;
+  }
   .container {
     max-width: 100%;
   }
-  header .slider .slide1, header .slider .slide2, header .slider .slide3 {
-    height: 500px;
-  }
   header .header__content {
-    margin-top: 50px !important;
-  }
-  header .container .content {
-    top: -540px;
+    margin-top: 34px !important;
   }
   header .container .content nav {
     flex-wrap: wrap;
     gap: 30px;
   }
   header .container .content nav .logo {
-    width: 50% !important;
+    width: 34% !important;
   }
   header .container .content nav .fa-solid {
     padding-right: 20px;
   }
   header .home__heading {
     font-size: 40px;
-  }
-  .services__cards--card {
-    width: 100% !important;
-  }
-  .about__us--section--left, .about__us--section--right {
-    width: 100% !important;
-  }
-  .about__us--section--left--content--cards, .about__us--section--right--content--cards {
-    width: 100% !important;
   }
   .our-Supporters--div-bottom {
     gap: 25px;
@@ -1026,32 +1003,11 @@ footer .container .footer__content form button {
   .our-Supporters--div-bottom div {
     width: 33% !important;
   }
-  .we__do__section--left {
-    width: 100% !important;
-  }
-  .latest__blog--div--content--cards--card {
-    width: 60% !important;
-  }
   .background__div {
     padding: 20px !important;
   }
   .background__div .buttons {
     flex-direction: column;
-  }
-  .events__cards {
-    flex-wrap: wrap;
-  }
-  .events__cards--card {
-    width: 100% !important;
-  }
-  .projects__top {
-    width: 100% !important;
-  }
-  .footer__content .footer__lists {
-    width: 100% !important;
-  }
-  .footer__content .footer__contact {
-    width: 100% !important;
   }
 }
 /* CSS for positioning the contact button and form */

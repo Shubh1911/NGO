@@ -2,23 +2,14 @@
 @use './typography';
 
 header {
-    
-    .slider{
-
-    .slide1,.slide2,.slide3{
-         background-image: url('../images/BannerImage.webp');
-    height: 802px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    }
-    }
-    
-    .container{
     position: relative;
+    .data{
+        width: 100%;
+position: absolute;
+top: 0;
+    .container{
       .content{
-        position: absolute;
-        top: -802px;
-    /* Navigation styles */
+      
     nav {
         align-items: center; 
        
@@ -93,8 +84,10 @@ line-height: normal;
 }
 
 }
+    }
     .header__content{
         margin-top: 178px;
+        justify-content: normal;
         .left__div{
             width: 50%;
             gap: 48px;
