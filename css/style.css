@@ -5,11 +5,6 @@
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
   font-display: swap;
 }
-@font-face {
-  font-family: Woff;
-  src: url("../fonts/slick.woff");
-  font-display: swap;
-}
 *,
 *::before,
 *::after {
