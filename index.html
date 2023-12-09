@@ -28,69 +28,143 @@
 </head>
 
 <body>
+  <header>
   <!-- Header Section starts from here-->
-  <section class="carousel" aria-label="Gallery">
-    <ol class="carousel__viewport">
-      <li id="carousel__slide1"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper">
-          <a href="#carousel__slide4"
-             class="carousel__prev">Go to last slide</a>
-          <a href="#carousel__slide2"
-             class="carousel__next">Go to next slide</a>
-        </div>
-      </li>
-      <li id="carousel__slide2"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide1"
-           class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide3"
-           class="carousel__next">Go to next slide</a>
-      </li>
-      <li id="carousel__slide3"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide2"
-           class="carousel__prev">Go to previous slide</a>
+ <section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
         <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
            class="carousel__next">Go to next slide</a>
-      </li>
-      <li id="carousel__slide4"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide3"
-           class="carousel__prev">Go to previous slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
         <a href="#carousel__slide1"
-           class="carousel__next">Go to first slide</a>
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
       </li>
     </ol>
-    <aside class="carousel__navigation">
-      <ol class="carousel__navigation-list">
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide1"
-             class="carousel__navigation-button">Go to slide 1</a>
-        </li>
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide2"
-             class="carousel__navigation-button">Go to slide 2</a>
-        </li>
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide3"
-             class="carousel__navigation-button">Go to slide 3</a>
-        </li>
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide4"
-             class="carousel__navigation-button">Go to slide 4</a>
-        </li>
-      </ol>
-    </aside>
-  </section>
-  
+  </aside>
+</section>
+
+<div class="container">
+  <div class="content">
+    <!-- Navbar starts from here -->
+    <nav class="nav__bar  display__flex">
+      <!-- Logo section -->
+      <div class="logo">
+        <img src="./images/logo 1.png" alt="logo" width="108"  height="45">
+      </div>
+      <!-- Horizontal list section -->
+      <div class="horizontal__list  display__flex">
+        <!-- Navigation links -->
+        <ul class="nav__list display__flex">
+          <li><a href="#">Home</a>
+            <ul class="submenu">
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Values</a></li>
+            </ul></li>
+          <li class="submenu">
+            <a href="#">About us</a>
+            <ul class="submenu">
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Values</a></li>
+            </ul>
+          </li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="contact__div  display__flex">
+          <div class="contact__div--logo">
+            <img src="./images/image 1.png" alt="call icon" width="41" height="41">
+          </div>
+          <div class="contact__div--text ">
+            <b>Any questions ?</b>
+
+            <p>Call: +234 09012346514</p>
+          </div>
+        </div>
+
+     
+      </div>
+
+      <a href="#">
+        <div class="btn">
+          Donate
+        </div>
+      </a>
+
+      <i class="fa-solid fa-bars" id="toggleBtn"></i>
+    </nav>
+
+    <div class="header__content  display__flex">
+      <div class="left__div display__flex">
+        <span class="home__heading">Inclusive care for children with special needs</span>
+        <a href="#">
+          <div class="btn">
+            Discover More
+          </div>
+        </a>
+      </div>
+      <div class="right__div  display__flex">
+
+        <div class="right__div--content  display__flex"> <b>300+</b>
+          <p>Children die Every Day in Africa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
     <section class="services">
       <div class="container">
         <div class="services__cards  display__flex">

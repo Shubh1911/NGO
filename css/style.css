@@ -1221,22 +1221,16 @@ ol, li {
 }
 
 .carousel__slide {
+  background-image: url("../images/BannerImage.webp");
+  /* Additional styles */
+  background-size: 100%; /* Adjust as needed */
+  background-repeat: no-repeat;
+  height: 800px;
+  /* Remaining styles */
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-image: url("../images/BannerImage.webp");
   counter-increment: item;
-  background-repeat: no-repeat;
-}
-
-.carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -40%, 70px);
-  color: #fff;
-  font-size: 2em;
 }
 
 .carousel__snapper {
@@ -1272,7 +1266,7 @@ ol, li {
 .carousel__navigation {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -30px;
   left: 0;
   text-align: center;
 }
@@ -1311,12 +1305,12 @@ ol, li {
 
 .carousel::before,
 .carousel__prev {
-  left: -1rem;
+  left: 1rem;
 }
 
 .carousel::after,
 .carousel__next {
-  right: -1rem;
+  right: 1rem;
 }
 
 .carousel::before,
