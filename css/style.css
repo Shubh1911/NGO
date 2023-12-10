@@ -188,16 +188,8 @@
   header .container .content nav .logo {
     width: 38% !important;
   }
-  header .container .content nav .logo img {
-    width: 162px;
-    height: 62px;
-  }
   header .container .content nav .fa-solid {
     padding-right: 20px;
-  }
-  header .container .content nav .contact__div--logo img {
-    height: 62px;
-    width: 62px;
   }
   header .carousel::before,
   header .carousel::after {
@@ -207,10 +199,6 @@
     height: 48px !important;
     width: 48px !important;
     margin: 0px 5px;
-  }
-  .services__cards--card img {
-    height: 122px;
-    width: 122px;
   }
   .our-Supporters--div-bottom {
     gap: 25px;
