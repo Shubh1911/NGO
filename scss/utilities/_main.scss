@@ -18,7 +18,7 @@
         gap: 86px;
         &--left{
             position: relative;
-            width: 37.5%;
+            width: 61.209%;
             img{
                 height: 100%;
                 width: 100%;
@@ -482,8 +482,14 @@ background: var(--foundation-secondary-yellow-50, #FCF5E8);
     background-image: url('../images/worldmap.webp');
     &--content{
 align-items: center;
+border: 1px solid orange;
+margin-top: 100px;
+
     .center__div{
-        padding: 119px 42px;
+        position: relative;
+        top: -20px;
+        border: 1px solid gray;
+        padding: 100px;
         &--img{
          border-right: 1px solid gray;
             width: 65%;   

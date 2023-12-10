@@ -81,6 +81,7 @@ width: 100% !important;
     }
   }
   .nav__list{
+    z-index: 1;
     text-align: center;
   background-color: $white_color;
     padding: 10px 20px;
@@ -175,6 +176,9 @@ li{
     width: 100% !important;
   }
 }
+.center__div{
+  padding:50px !important;
+}
   }
 
   /* For screens up to 560px width */
@@ -243,5 +247,21 @@ li{
 .events__heading::after {
    width: 50% !important;
 }
-
+.testimonial__div--content{
+  flex-direction: column;
+  border: none !important;
+.center__div{
+  top: 0px !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding:25px !important;
+  &--img{
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+}
   }

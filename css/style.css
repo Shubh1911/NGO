@@ -65,6 +65,7 @@
     gap: 15px !important;
   }
   header .nav__list {
+    z-index: 1;
     text-align: center;
     background-color: #fff;
     padding: 10px 20px;
@@ -142,6 +143,9 @@
   .footer__content .footer__contact {
     width: 100% !important;
   }
+  .center__div {
+    padding: 50px !important;
+  }
 }
 /* For screens up to 560px width */
 @media only screen and (max-width: 560px) {
@@ -189,6 +193,23 @@
   }
   .events__heading::after {
     width: 50% !important;
+  }
+  .testimonial__div--content {
+    flex-direction: column;
+    border: none !important;
+  }
+  .testimonial__div--content .center__div {
+    top: 0px !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px !important;
+  }
+  .testimonial__div--content .center__div--img {
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* css resets starts */
@@ -860,7 +881,7 @@ header .header__content .right__div--content p {
 }
 .about__us--section--left {
   position: relative;
-  width: 37.5%;
+  width: 61.209%;
 }
 .about__us--section--left img {
   height: 100%;
@@ -1287,9 +1308,14 @@ header .header__content .right__div--content p {
 }
 .testimonial__section .testimonial__div--content {
   align-items: center;
+  border: 1px solid orange;
+  margin-top: 100px;
 }
 .testimonial__section .testimonial__div--content .center__div {
-  padding: 119px 42px;
+  position: relative;
+  top: -20px;
+  border: 1px solid gray;
+  padding: 100px;
 }
 .testimonial__section .testimonial__div--content .center__div--img {
   border-right: 1px solid gray;
