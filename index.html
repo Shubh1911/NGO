@@ -12,7 +12,9 @@
 
   <!-- Other CSS Files -->
   <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="preload" href="./fonts/slick.woff" as="font" type="font/woff2" crossorigin="anonymous">
 
+  <link rel="preload" href="./fonts/Roboto/Roboto-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
 
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
@@ -539,7 +541,7 @@
           <div class="latest__blog--div--content--cards width  display__flex">
 
             <div class="latest__blog--div--content--cards--card  width">
-              <img src="./images/blogimage.webp" alt="img1" width="411" height="410">
+              <img src="./images/blogimage.webp" alt="img1" width="411" height="410"  loading="lazy">
               <div class="card--text">
                 <div class="date">
                   <h2>10</h2>
