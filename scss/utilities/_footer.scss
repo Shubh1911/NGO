@@ -1,10 +1,11 @@
 /* Styling for the footer */
 @use '../abstracts/typography';
+@use '../abstracts/variables' as * ;
 
 footer {
-  background-color:black;
+  background-color: $black_color;
   padding:96px 0 ;
-  color: white;
+  color: $white_color;
 
   /* Styles for the content container within the footer */
   .container {
@@ -31,7 +32,7 @@ justify-content: space-between;
             /* Styles for list items within the footer */
             li {
               a {
-                color:white;
+                color:$white_color;
                 font-size: 14px;
                 font-family: Roboto;
                 font-weight: 400;
@@ -63,15 +64,16 @@ justify-content: space-between;
         gap: 25px;
         p{
           letter-spacing: 2px;
-text-transform: uppercase;position: relative;
+text-transform: uppercase;
+position: relative;
 &::after{
   content: "";
   height: 3px;
   width: 40px;
   left: 150px;
   top: 10px;
-  color: black;
-  background: #cdb8b8;
+  color:$black_color;
+  background: $white_color;
   position: absolute;
 }
 
@@ -83,8 +85,8 @@ text-transform: uppercase;position: relative;
         input{
           margin: 0 !important;
           padding: 1rem 0.5rem;
-          background: black;
-          border: 1px solid white;
+          background: $black_color;
+          border: 1px solid $white_color;
 
         }
        button{
@@ -93,9 +95,9 @@ text-transform: uppercase;position: relative;
         border-radius: 3px;
         font-family: Roboto;
         font-size: 16px;
-        background:white;
+        background:$white_color;
         backdrop-filter: blur(40px);
-        color:black;
+        color:$black_color;
         border: none;
        }
       }

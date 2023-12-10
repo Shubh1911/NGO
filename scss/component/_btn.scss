@@ -1,0 +1,8 @@
+.btn{
+    display: inline-flex;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: var(--foundation-primary-red-500, #B4252D);
+    backdrop-filter: blur(40px);
+    color: white;
+}

@@ -1,120 +1,142 @@
 /* Styling for header */
-@use '../abstracts/typography';
 
+/* Importing abstracts */
+@use '../abstracts/typography';
+@use '../abstracts/variables' as *;
+
+/* Styling for header section */
 header {
     position: relative;
-    .data{
+
+    /* Data section within header */
+    .data {
         width: 100%;
-position: absolute;
-top: 0;
-    .container{
-      .content{
-      
-    nav {
-        align-items: center; 
-       
-        padding: 18px 0px;
+        position: absolute;
+        top: 0;
 
-        
-        /* Horizontal list styles */
-        .horizontal__list {
-            gap: 113px;
-            align-items: center;
-            ul {
-                gap: 40px; 
-                li{
-                    position: relative;
-                    a{
-                        
-                        font-family: Roboto;
-                        color: black;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+        /* Container and content within data */
+        .container {
+            .content {
+                /* Navigation styles */
+                nav {
+                    align-items: center;
+                    padding: 18px 0px;
+
+                    /* Horizontal list styles */
+                    .horizontal__list {
+                        gap: 113px;
+                        align-items: center;
+
+                        /* Unordered list styles */
+                        ul {
+                            gap: 40px;
+
+                            /* List item styles */
+                            li {
+                                position: relative;
+
+                                /* Anchor styles */
+                                a {
+                                    font-family: Roboto;
+                                    color: $black_color;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+
+                                /* Submenu styles */
+                                .submenu {
+                                    background-color: $white_color;
+                                    opacity: 0.5;
+                                    display: flex;
+                                    flex-direction: column;
+                                    position: absolute;
+                                    top: 30px;
+                                    display: none;
+                                }
+                            }
+
+                            /* Margin for list items */
+                            li {
+                                margin: 10px 10px;
+                            }
+
+                            /* Hover effect to display submenu */
+                            li:hover {
+                                .submenu {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        /* Contact section styles */
+                        .contact__div {
+                            gap: 12px;
+
+                            /* Text styles within contact section */
+                            &--text {
+                                b {
+                                    font-family: Roboto;
+                                }
+                                p {
+                                    font-family: Roboto;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
                     }
 
-                    .submenu{
-                        background-color: white;
-                        opacity: 0.5;
-                        display: flex;
-                        flex-direction: column;
+                    /* Button styles */
+                    .btn {
+                        padding: 12px 32px;
+                        border-radius: 4px;
+                        background: $button_primary;
+                        color: $white_color;
+                    }
 
-                        position: absolute;
-                        top: 30px;
+                    /* Toggle button styles */
+                    #toggleBtn {
                         display: none;
-                    }
-                }
-                li{
-                    margin: 10px 10px;
-                }
-                li:hover{
-                    .submenu{
-                        display: block;
-                    }
-                }
-            }
-            .contact__div{
-                gap: 12px;
-                &--text{
-                    b{
-                        font-family: Roboto;
-                    }
-                    p{
-                     font-family: Roboto;
-                     font-weight: 400; 
-                     font-size: 14px;  
+                        font-size: 30px;
                     }
                 }
             }
         }
-        .btn{
-            padding: 12px 32px;
-             border-radius: 4px;
-            background: var(--Primary-text, #1D2130);
-            color: white;
-        }
-
-        #toggleBtn {
-            display: none; 
-            font-size: 30px; 
-            
-        }
     }
-}
 
-}
-    }
-    .header__content{
+    /* Header content styles */
+    .header__content {
         margin-top: 178px;
         justify-content: normal;
-        .left__div{
+
+        /* Left and right content within header */
+        .left__div {
             width: 50%;
             gap: 48px;
             flex-direction: column;
-            .btn{
-                display: inline-flex;
-                padding: 16px 32px;
-                border-radius: 4px;
-                background: var(--foundation-primary-red-500, #B4252D);
-                backdrop-filter: blur(40px);
-                color: white;
-            }
         }
-        .right__div{
+
+        .right__div {
             align-items: end;
-            &--content{
+
+            /* Content styles within right div */
+            &--content {
                 margin: 0 auto;
                 gap: 19px;
                 flex-direction: column;
                 width: 50%;
-                b{
+
+                /* Heading styles */
+                b {
                     font-size: 24px;
                     font-weight: 700;
                     font-family: Roboto;
-
                 }
-                p{
+
+                /* Paragraph styles */
+                p {
                     line-height: 160%;
                 }
             }
