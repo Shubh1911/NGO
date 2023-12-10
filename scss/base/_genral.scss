@@ -1,6 +1,6 @@
 /* css resets starts */
 /* Box sizing rules */
-@use './typography';
+@use '../abstracts/typography';
 *,
 *::before,
 *::after {

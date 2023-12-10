@@ -1,5 +1,5 @@
 /* CSS for positioning the contact button and form */
-@use './typography';
+@use '../abstracts/typography';
 .contact-button {
     position: fixed;
     bottom: 70px;

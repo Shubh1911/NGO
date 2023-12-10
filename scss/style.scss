@@ -1,7 +1,8 @@
-@use './genral';
-@use './header';
-@use './main';
-@use './footer';
-@use './media-queries';
-@use './form';
-@use './slider';
+@use './abstracts/media-queries';
+@use './base/genral';
+@use './component/btn';
+@use './component/form';
+@use './component/slider';
+@use './utilities/footer';
+@use './utilities/header';
+@use './utilities/main';
