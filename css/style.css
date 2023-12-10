@@ -35,22 +35,22 @@
 /* For screens up to 768px width */
 @media only screen and (max-width: 768px) {
   .home__heading {
-    font-size: 50px;
+    font-size: 50px !important;
   }
   h1 {
-    font-size: 40px;
+    font-size: 40px !important;
   }
   h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   h3 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   h4 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   p {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .container {
     max-width: 560px;
@@ -146,9 +146,32 @@
   .center__div {
     padding: 50px !important;
   }
+  .contact-form {
+    width: 640px;
+    height: 600px !important;
+    padding: 10px !important;
+  }
 }
 /* For screens up to 560px width */
 @media only screen and (max-width: 560px) {
+  .home__heading {
+    font-size: 35px !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 25px !important;
+  }
+  h3 {
+    font-size: 22px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
   .width {
     width: 100% !important;
   }
@@ -163,17 +186,31 @@
     gap: 30px;
   }
   header .container .content nav .logo {
-    width: 34% !important;
+    width: 38% !important;
+  }
+  header .container .content nav .logo img {
+    width: 162px;
+    height: 62px;
   }
   header .container .content nav .fa-solid {
     padding-right: 20px;
   }
-  header .home__heading {
-    font-size: 40px;
+  header .container .content nav .contact__div--logo img {
+    height: 62px;
+    width: 62px;
   }
   header .carousel::before,
   header .carousel::after {
     display: none;
+  }
+  .carousel__navigation-button {
+    height: 48px !important;
+    width: 48px !important;
+    margin: 0px 5px;
+  }
+  .services__cards--card img {
+    height: 122px;
+    width: 122px;
   }
   .our-Supporters--div-bottom {
     gap: 25px;
@@ -453,6 +490,14 @@ input[type=submit] {
   color: white;
 }
 
+.thank-you-message {
+  display: none;
+}
+.thank-you-message p {
+  font-size: 40px;
+  font-weight: 900;
+}
+
 @keyframes tonext {
   75% {
     left: 0;
@@ -549,7 +594,6 @@ ol, li {
   /* Additional styles */
   background-size: 100%; /* Adjust as needed */
   background-repeat: no-repeat;
-  height: 800px;
   /* Remaining styles */
   position: relative;
   flex: 0 0 100%;
@@ -618,7 +662,7 @@ ol, li {
 .carousel__next {
   position: absolute;
   top: 0;
-  margin-top: 150px;
+  margin-top: 140px;
   width: 4rem;
   height: 4rem;
   transform: translateY(-50%);
@@ -863,7 +907,7 @@ header .header__content .right__div--content p {
 }
 
 .services {
-  margin: 27px 0px 59px 0px;
+  margin: 70px 0px 59px 0px;
 }
 .services .services__cards {
   gap: 90px;

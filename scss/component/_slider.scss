@@ -98,7 +98,6 @@ ol, li {
     /* Additional styles */
     background-size: 100%; /* Adjust as needed */
     background-repeat: no-repeat;
-    height: 800px;
     /* Remaining styles */
     position: relative;
     flex: 0 0 100%;
@@ -171,7 +170,7 @@ ol, li {
 .carousel__next {
   position: absolute;
   top: 0;
-  margin-top: 150px;
+  margin-top: 140px;
   width: 4rem;
   height: 4rem;
   transform: translateY(-50%);

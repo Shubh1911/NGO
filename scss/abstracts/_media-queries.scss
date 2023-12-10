@@ -42,26 +42,26 @@ width: 100% !important;
   /* For screens up to 768px width */
   @media only screen and (max-width: 768px) {
     .home__heading{
-      font-size: 50px;
+      font-size: 50px !important;
       }
       h1{
-      font-size: 40px; 
+      font-size: 40px !important; 
       }
       
       h2{
   
-        font-size: 30px;
+        font-size: 30px !important;
     
       }
       
    h3{
-    font-size: 22px;
+    font-size: 22px !important;
    }
    h4{
-    font-size: 18px;
+    font-size: 18px !important;
    }
    p{
-    font-size: 14px;
+    font-size: 14px !important;
    }
     .container{
       max-width:560px;
@@ -179,11 +179,39 @@ li{
 .center__div{
   padding:50px !important;
 }
+.contact-form {
+  width: 640px;
+  height: 600px !important;
+  padding: 10px !important;
   }
+}
 
   /* For screens up to 560px width */
 
   @media only screen and (max-width: 560px) {
+
+    .home__heading{
+      font-size: 35px !important;
+      }
+      h1{
+      font-size: 30px !important; 
+      }
+      
+      h2{
+  
+        font-size: 25px !important;
+    
+      }
+      
+   h3{
+    font-size: 22px !important;
+   }
+   h4{
+    font-size: 16px !important;
+   }
+   p{
+    font-size: 12px !important;
+   }
 
 .width{
   width: 100% !important;
@@ -202,20 +230,27 @@ li{
             flex-wrap: wrap;
             gap: 30px;
             .logo{
-              width: 34% !important;
+              width: 38% !important;
+              img{
+                width: 162px;
+                height: 62px;
+              }
             }
             .fa-solid{
               padding-right: 20px;
 
             }
+
+            .contact__div--logo{
+              img{
+height: 62px;
+width: 62px;
+              }
+            }
           }
         }
     
     }
-    .home__heading{
-      font-size: 40px;
-    }
-
 
 .carousel::before,
 .carousel::after {
@@ -224,7 +259,18 @@ li{
     }
 
 
+    .carousel__navigation-button{
+      height: 48px !important;
+      width: 48px !important;
+      margin:0px 5px;
+    }
 
+    .services__cards--card {
+img{
+  height: 122px;
+  width: 122px;
+}
+    }
 .our-Supporters--div-bottom{
   gap: 25px;
   justify-content: center;

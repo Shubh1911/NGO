@@ -1,723 +1,767 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="NGO website">
 
   <!-- CSS File with Cache-Control and Integrity -->
-  <link rel="stylesheet" href="./css/style.css" type="text/css" as="style" crossorigin="anonymous" integrity="your-integrity-hash">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" as="style" crossorigin="anonymous"
+    integrity="your-integrity-hash">
 
   <!-- Other CSS Files -->
   <link rel="stylesheet" href="./css/slick-theme.css">
-  
-  
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></noscript>
-  
+
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </noscript>
+
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/slick.min.js" defer></script>
   <script src="./js/slider.js" defer></script>
+  <script src="./js/script.js"></script>
   <script src="./js/nav.js" defer></script>
 
   <title>Document</title>
 
 
-  
+
 </head>
 
 <body>
-  <header>
   <!-- Header Section starts from here-->
- <section class="carousel" aria-label="Gallery">
-  <ol class="carousel__viewport">
-    <li id="carousel__slide1"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper">
-        <a href="#carousel__slide4"
-           class="carousel__prev">Go to last slide</a>
-        <a href="#carousel__slide2"
-           class="carousel__next">Go to next slide</a>
-      </div>
-    </li>
-    <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide3"
-         class="carousel__next">Go to next slide</a>
-    </li>
-    <li id="carousel__slide3"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide2"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide4"
-         class="carousel__next">Go to next slide</a>
-    </li>
-    <li id="carousel__slide4"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide3"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide1"
-         class="carousel__next">Go to first slide</a>
-    </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1"
-           class="carousel__navigation-button">Go to slide 1</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2"
-           class="carousel__navigation-button">Go to slide 2</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3"
-           class="carousel__navigation-button">Go to slide 3</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide4"
-           class="carousel__navigation-button">Go to slide 4</a>
-      </li>
-    </ol>
-  </aside>
-</section>
-<div class="data">
-<div class="container">
-  <div class="content">
-    <!-- Navbar starts from here -->
-    <nav class="nav__bar  display__flex">
-      <!-- Logo section -->
-      <div class="logo">
-        <img src="./images/logo 1.png" alt="logo" width="108"  height="45">
-      </div>
-      <!-- Horizontal list section -->
-      <div class="horizontal__list  display__flex">
-        <!-- Navigation links -->
-        <ul class="nav__list display__flex">
-          <li><a href="#">Home</a>
-            <ul class="submenu">
-              <li><a href="#">Mission</a></li>
-              <li><a href="#">Vision</a></li>
-              <li><a href="#">Values</a></li>
-            </ul></li>
-          <li class="submenu">
-            <a href="#">About us</a>
-            <ul class="submenu">
-              <li><a href="#">Mission</a></li>
-              <li><a href="#">Vision</a></li>
-              <li><a href="#">Values</a></li>
-            </ul>
+  <header>
+    <!-- carousel starts from here -->
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <!-- slide one  -->
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <!-- slide second -->
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        </li><!-- Header Section starts from here-->
+        <!-- slide third -->
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
           </li>
-          <li><a href="#">What We Do</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-        <div class="contact__div  display__flex">
-          <div class="contact__div--logo">
-            <img src="./images/image 1.png" alt="call icon" width="41" height="41">
-          </div>
-          <div class="contact__div--text ">
-            <b>Any questions ?</b>
-
-            <p>Call: +234 09012346514</p>
-          </div>
-        </div>
-
-     
-      </div>
-
-      <a href="#">
-        <div class="btn">
-          Donate
-        </div>
-      </a>
-
-      <i class="fa-solid fa-bars" id="toggleBtn"></i>
-    </nav>
-
-    <div class="header__content  display__flex">
-      <div class="left__div display__flex">
-        <span class="home__heading">Inclusive care for children with special needs</span>
-        <a href="#">
-          <div class="btn">
-            Discover More
-          </div>
-        </a>
-      </div>
-      <div class="right__div  display__flex">
-
-        <div class="right__div--content  display__flex"> <b>300+</b>
-          <p>Children die Every Day in Africa</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</header>
-    <section class="services">
-      <div class="container">
-        <div class="services__cards  display__flex">
-          <div class="services__cards--card  width  display__flex">
-            <img src="./images/health.png" alt="health icon" width="81" height="81">
-            <h4>Healthy Food</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-
-
-          <div class="services__cards--card  width  display__flex">
-            
-            <img src="./images/education.png" alt="education"  width="73" height="81">
-            <h4>Education</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <div class="services__cards--card  width  display__flex">
-            <img src="./images/water.png" alt="water"  width="81" height="81">
-            <h4>Pure Water</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <div class="services__cards--card  width  display__flex">
-            <img src="./images/Layer_1.png" alt="heart" width="81" height="80">
-            <h4>Medical</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-        </div>
-      </div>
-
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
+      </aside>
     </section>
-
-    <div class="contact-button">
-      <button id="contactBtn">Contact Us</button>
-      <div class="contact-form">
-        <button class="close-btn" onclick="closeForm()">X</button>
-        <form id="contactForm" class="display__flex">
-          <h2>Join as a volunteer</h2>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique.
-          </h5>
-
-          <div class="name display__flex">
-            <div> <label for="name">FirstName:</label><br>
-              <input type="text" id="FirstName" name="FirstName" required>
-            </div>
-
-            <div><label for="name">LastName:</label>
-              <br>
-              <input type="text" id="LastName" name="LastName" required>
-            </div>
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-          </div>
-          <div>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="10" required></textarea><br>
-          </div>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-
-
-    <section class="about__us">
+    <div class="data">
       <div class="container">
-        <div class="about__us--section  display__flex">
-          <div class="about__us--section--left  width">
-            <img src="./images/map.webp" alt="map image" width="480" height="579">
-            <div class="state state-1">
-              <div class="text  text-1">
-                <p>India</p>
-              </div>
+        <div class="content">
+          <!-- Navbar starts from here -->
+          <nav class="nav__bar  display__flex">
+            <!-- Logo section -->
+            <div class="logo">
+              <img src="./images/logo 1.png" alt="logo" width="108" height="45">
             </div>
-            <div class="state state-2">
-              <div class="text  text-2">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-3">
-              <div class="text  text-3">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-4">
-              <div class="text  text-4">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-5">
-              <div class="text  text-5">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-6">
-              <div class="text  text-6">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-7">
-              <div class="text  text-7">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-8">
-              <div class="text  text-8">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-9">
-              <div class="text  text-9">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-10">
-              <div class="text  text-10">
-                <p>India</p>
-              </div>
-            </div>
-            <div class="state state-11">
-              <div class="text  text-11">
-                <p>India</p>
-              </div>
-            </div>
-          
-          </div>
+            <!-- Horizontal list section -->
+            <div class="horizontal__list  display__flex">
+              <!-- Navigation links -->
+              <ul class="nav__list display__flex">
+                <li><a href="#">Home</a>
+                  <ul class="submenu">
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Values</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="#">About us</a>
+                  <ul class="submenu">
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Values</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
 
-          <div class="about__us--section--right  width display__flex">
-
-
-            <div class="dot__line display__flex">
-              <hr>
-              <img src="./images/dot 1.png" alt="dot" width="14" height="15">
-            </div>
-
-            <div class="about__us--section--right--content  display__flex">
-              <p>KNOW ABOUT US</p>
-
-              <h2>We provide a place for children with special needs</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                tristique.
-              </p>
-              <div class="about__us--section--right--content--cards  width  display__flex">
-                <div class="about__us--section--right--content--cards--card">
-                  <h3>32m</h3>
-                  <p>Total Donations</p>
+              <div class="contact__div  display__flex">
+                <div class="contact__div--logo">
+                  <img src="./images/image 1.png" alt="call icon" width="41" height="41">
                 </div>
-                <div class="about__us--section--right--content--cards--card">
-                  <h3>40k</h3>
-                  <p>Projects Funded</p>
-                </div>
-                <div class="about__us--section--right--content--cards--card">
-                  <h3>32k</h3>
-                  <p>Statisfied Donors</p>
-                </div>
-                <div class="about__us--section--right--content--cards--card">
-                  <h3>230</h3>
-                  <p>Volunteers</p>
+                <div class="contact__div--text ">
+                  <b>Any questions ?</b>
+
+                  <p>Call: +234 09012346514</p>
                 </div>
               </div>
+
+
+            </div>
+            <!-- button -->
+            <a href="#">
+              <div class="btn">
+                Donate
+              </div>
+            </a>
+
+            <!-- ham burger menu -->
+            <i class="fa-solid fa-bars" id="toggleBtn"></i>
+          </nav>
+          <!-- header content placed at bottom -->
+          <div class="header__content  display__flex">
+            <div class="left__div display__flex">
+              <span class="home__heading">Inclusive care for children with special needs</span>
               <a href="#">
                 <div class="btn">
                   Discover More
                 </div>
               </a>
             </div>
+            <div class="right__div  display__flex">
+
+              <div class="right__div--content  display__flex"> <b>300+</b>
+                <p>Children die Every Day in Africa</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section class="our-Supporters">
-      <div class="container">
-        <div class="our-Supporters--div-top">
-          <p>our Supporters</p>
+
+  <!-- services section starts from here -->
+  <section class="services">
+    <div class="container">
+      <!-- cards -->
+      <div class="services__cards  display__flex">
+        <!-- card 1 -->
+        <div class="services__cards--card  width  display__flex">
+          <img src="./images/health.png" alt="health icon" width="81" height="81">
+          <h4>Healthy Food</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
-        <div class=" our-Supporters--div-bottom  display__flex">
-          <div><img src="images/Logo.png" alt="brand"  width="143" height="29"></div>
-          <div><img src="images/Logo 1.png" alt="brand" width="138" height="32"></div>
-          <div><img src="images/Logo (2).png" alt="brand" width="127" height="30"></div>
-          <div><img src="images/Logo (3).png" alt="brand" width="124" height="26"></div>
-          <div><img src="images/Logo (4).png" alt="brand" width="134" height="32"></div>
-          <div><img src="images/Logo (5).png" alt="brand" width="137" height="32"></div>
+
+        <!-- card 2 -->
+        <div class="services__cards--card  width  display__flex">
+
+          <img src="./images/education.png" alt="education" width="73" height="81">
+          <h4>Education</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+
+        <!-- card 3 -->
+        <div class="services__cards--card  width  display__flex">
+          <img src="./images/water.png" alt="water" width="81" height="81">
+          <h4>Pure Water</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+
+        <!-- card 4 -->
+        <div class="services__cards--card  width  display__flex">
+          <img src="./images/Layer_1.png" alt="heart" width="81" height="80">
+          <h4>Medical</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
       </div>
-    </section>
+    </div>
+
+  </section>
+  <!-- services section ends here  -->
+
+  <!-- about us section starts from here -->
+  <section class="about__us">
+    <div class="container">
+      <div class="about__us--section  display__flex">
+
+        <!-- left side  -->
+        <div class="about__us--section--left  width">
+          <!-- map -->
+          <img src="./images/map.webp" alt="map image" width="480" height="579">
+          <div class="state state-1">
+            <div class="text  text-1">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-2">
+            <div class="text  text-2">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-3">
+            <div class="text  text-3">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-4">
+            <div class="text  text-4">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-5">
+            <div class="text  text-5">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-6">
+            <div class="text  text-6">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-7">
+            <div class="text  text-7">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-8">
+            <div class="text  text-8">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-9">
+            <div class="text  text-9">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-10">
+            <div class="text  text-10">
+              <p>India</p>
+            </div>
+          </div>
+          <div class="state state-11">
+            <div class="text  text-11">
+              <p>India</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- right side  -->
+        <div class="about__us--section--right  width display__flex">
 
 
-    <section class="projects">
+          <div class="dot__line display__flex">
+            <hr>
+            <img src="./images/dot 1.png" alt="dot" width="14" height="15">
+          </div>
 
-      <div class="container">
-
-        <div class="projects__top  width display__flex">
-          <hr>
-          
-          <div class="projects__top--content  display__flex">
-            
+          <div class="about__us--section--right--content  display__flex">
             <p>KNOW ABOUT US</p>
-            <h2>Learn the stories of those we've already helped</h2>
-          </div>
-        </div>
 
-        <div class="bottom">
-          <div class="slider cards   display__flex">
-            <div class="card card1">
-
-              <h3>Mission smile 1k: Outdoor charity</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-              <a href="#">
-
-                <div class="btn">
-                  Donate
-                </div>
-              </a>
-            </div>
-            <div class="card card2">
-
-              <h3>Mission smile 1k: Outdoor charity</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-              <a href="#">
-
-                <div class="btn">
-                  Donate
-                </div>
-              </a>
-            </div>
-            <div class="card card3">
-
-              <h3>Mission smile 1k: Outdoor charity</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-              <a href="#">
-
-                <div class="btn">
-                  Donate
-                </div>
-              </a>
-
-            </div>
-            <div class="card card2">
-
-              <h3>Mission smile 1k: Outdoor charity</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-              <a href="#">
-
-                <div class="btn">
-                  Donate
-                </div>
-              </a>
-            </div>
-            <div class="card card3">
-
-              <h3>Mission smile 1k: Outdoor charity</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-              <a href="#">
-
-                <div class="btn">
-                  Donate
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="we__do">
-      <div class="container">
-        <div class="we__do__section  display__flex">
-          <div class="we__do__section--left width  display__flex">
-            <div class="dot__line display__flex">
-              <hr>
-              <img src="./images/dot 1.png" alt="dot"  width="14" height="15">
-            </div>
-
-            <div class="we__do__section--left--content  display__flex">
-              <p>WHAT WE DO</p>
-              <h2>Some services we provide for our children</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                elementum tristique.</p>
-              <div class="we__do__section--left--content--bottom  display__flex">
-                <div class="we__do__section--left--content--bottom--div  display__flex">
-                  <div class="logo">
-                    <img src="./images/fi-rs-chart-network.png" alt="family support" width="24" height="24">
-                  </div>
-                  <div class="text">
-                    <h3>Family Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                      eros.</p>
-                  </div>
-                </div>
-                <div class="we__do__section--left--content--bottom--div  display__flex">
-                  <div class="text">
-                    <img src="./images/fi-rs-diploma.png" alt="health" width="24" height="24">
-                  </div>
-                  <div class="text">
-                    <h3>Family Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                      eros.</p>
-                  </div>
-                </div>
-                <div class="we__do__section--left--content--bottom--div  display__flex">
-                  <div class="logo">
-                    <img src="./images/fi-rs-pharmacy.png" alt="diploma" width="24" height="24">
-                  </div>
-                  <div class="text">
-                    <h3>Scholarships</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                      eros.</p>
-                  </div>
-                </div>
-                <div class="we__do__section--left--content--bottom--div  display__flex">
-                  <div class="logo">
-                    <img src="./images/fi-rs-stethoscope.png" alt="family support" width="24" height="24">
-                  </div>
-                  <div class="text">
-                    <h3>Therapy</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-                      eros.</p>
-                  </div>
-                </div>
+            <h2>We provide a place for children with special needs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique.
+            </p>
+            <!-- cards -->
+            <div class="about__us--section--right--content--cards  width  display__flex">
+              <div class="about__us--section--right--content--cards--card">
+                <h3>32m</h3>
+                <p>Total Donations</p>
+              </div>
+              <div class="about__us--section--right--content--cards--card">
+                <h3>40k</h3>
+                <p>Projects Funded</p>
+              </div>
+              <div class="about__us--section--right--content--cards--card">
+                <h3>32k</h3>
+                <p>Statisfied Donors</p>
+              </div>
+              <div class="about__us--section--right--content--cards--card">
+                <h3>230</h3>
+                <p>Volunteers</p>
               </div>
             </div>
-          </div>
-          <div class="services__right">
-            <img src="./images/servicesimage.webp" alt="" width="497" height="589">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="latest__blog">
-      <div class="container">
-
-        <div class="latest__blog--div  display__flex">
-          <div class="latest__blog--div--heading  display__flex">
-            <div class="dot__line display__flex">
-              <hr>
-              <img src="./images/dot 1.png" alt="dot"   width="14" height="15">
-            </div>
-
-            <div class="heading display__flex">
-              <p>Watch Our Latest Blogs
-              </p>
-              <h2>Check Out Our Latest Blogs</h2>
-            </div>
-          </div>
-          <div class="latest__blog--div--content">
-
-            <div class="latest__blog--div--content--cards width  display__flex">
-
-              <div class="latest__blog--div--content--cards--card  width">
-                <img src="./images/blogimage.webp" alt="img1" width="411" height="410">
-                <div class="card--text">
-                  <div class="date">
-                    <h2>10</h2>
-                    <p>APR</p>
-                  </div>
-                  <div class="image__text  display__flex">
-                    <div class="image__text--left  display__flex">
-                      <img src="./images/fi-rr-comments.png" alt="comment" width="24" height="25">
-                      <p>2 Comments</p>
-                    </div>
-                    <div class="image__text--right  display__flex">
-                      <img src="./images/fi-rr-man-head.png" alt="head"   width="24" height="25">
-                      <p>Posted by author</p>
-                    </div>
-                  </div>
-
-                  <p class="para">Online legal advice for asylum seekers in Greece</p>
-                  <a href="#">
-                    <div class="btn">
-                      Read More
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="latest__blog--div--content--cards--card  width">
-                <img src="./images/blogimage2.webp" alt="img2"  width="411" height="410">
-                <div class="card--text">
-                  <div class="date">
-                    <h2>10</h2>
-                    <p>APR</p>
-                  </div>
-                  <div class="image__text  display__flex">
-                    <div class="image__text--left  display__flex">
-                      <img src="./images/fi-rr-comments.png" alt="comment"  width="24" height="25">
-                      <p>2 Comments</p>
-                    </div>
-                    <div class="image__text--right  display__flex">
-                      <img src="./images/fi-rr-man-head.png" alt="head"  width="24" height="25">
-                      <p>Posted by author</p>
-                    </div>
-                  </div>
-
-                  <p class="para">Online legal advice for asylum seekers in Greece</p>
-                  <a href="#">
-                    <div class="btn">
-                      Read More
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="latest__blog--div--content--cards--card  width">
-                <img src="./images/blogimage3.webp" alt="img3"  width="411" height="410">
-                <div class="card--text">
-                  <div class="date">
-                    <h2>10</h2>
-                    <p>APR</p>
-                  </div>
-                  <div class="image__text  display__flex">
-                    <div class="image__text--left  display__flex">
-                      <img src="./images/fi-rr-comments.png" alt="comment"  width="24" height="25">
-                      <p>2 Comments</p>
-                    </div>
-                    <div class="image__text--right  display__flex">
-                      <img src="./images/fi-rr-man-head.png" alt="head"  width="24" height="25">
-                      <p>Posted by author</p>
-                    </div>
-                  </div>
-
-                  <p class="para">Online legal advice for asylum seekers in Greece</p>
-                  <a href="#">
-                    <div class="btn">
-                      Read More
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-
-
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-      </div>
-
-    </section>
-
-    <section class="testimonial__section">
-      <div class="container">
-        <div class="testimonial__div">
-          <div class="latest__blog--div--heading  display__flex">
-            <div class="dot__line display__flex">
-              <hr>
-              <img src="./images/dot 1.png" alt="dot"  width="14" height="15">
-            </div>
-
-            <div class="heading display__flex">
-              <p>Watch Our Latest Blogs
-              </p>
-              <h2>Our customer success stories about us</h2>
-              <div class="testimonial__div--content   display__flex">
-                <div class="left__arrow">
-                  <img src="./images/Arrow button.svg" alt="arrow left" width="56" height="57">
-                </div>
-                <div class="center__div  display__flex">
-                  <div class="center__div--img">
-                    <div><img src="./images/tesimonailuser.webp" alt="man image" width="103" height="106"></div>
-                    <h3>Smith Murthy</h3>
-                    <p>DIRECTOR</p>
-                  </div>
-                  <div class="center__div--para">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-                      <br> <br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                  </div>
-                </div>
-                <div class="right__Arrow">
-                  <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
-                </div>
-              </div>
-            </div>
-          </div>
-         
-        </div>
-      </div>
-    </section>
-
-    <section class="donate">
-      <div class="container">
-        <div class="background__div">
-          <h2>You can contribute to provide a place for children with special needs!</h2>
-
-          <div class="buttons  display__flex">
             <a href="#">
               <div class="btn">
-                join as a volunteer
+                Discover More
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about us ends here  -->
+
+  <!-- contact form -->
+  <div class="contact-button">
+    <button id="contactBtn">Contact Us</button>
+    <div class="contact-form">
+      <button class="close-btn" onclick="closeForm()">X</button>
+      <form id="contactForm" class="display__flex">
+        <h2>Join as a volunteer</h2>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique.
+        </h5>
+
+        <div class="name display__flex">
+          <div> <label for="name">FirstName:</label><br>
+            <input type="text" id="FirstName" name="FirstName" required>
+          </div>
+
+          <div><label for="name">LastName:</label>
+            <br>
+            <input type="text" id="LastName" name="LastName" required>
+          </div>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+        </div>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="10" required></textarea><br>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+      <div class="thank-you-message" style="display: none;">
+        <p> Thank you for your submission!</p>
+      </div>
+    </div>
+  </div>
+  <!-- contact form ends  -->
+
+  <!-- supportes section starts from here -->
+  <section class="our-Supporters">
+    <div class="container">
+      <div class="our-Supporters--div-top">
+        <p>our Supporters</p>
+      </div>
+      <!-- logos -->
+      <div class=" our-Supporters--div-bottom  display__flex">
+        <div><img src="images/Logo.png" alt="brand" width="143" height="29"></div>
+        <div><img src="images/Logo 1.png" alt="brand" width="138" height="32"></div>
+        <div><img src="images/Logo (2).png" alt="brand" width="127" height="30"></div>
+        <div><img src="images/Logo (3).png" alt="brand" width="124" height="26"></div>
+        <div><img src="images/Logo (4).png" alt="brand" width="134" height="32"></div>
+        <div><img src="images/Logo (5).png" alt="brand" width="137" height="32"></div>
+      </div>
+    </div>
+  </section>
+  <!-- supportrs section end here -->
+
+
+  <!-- project section starts from here  -->
+  <section class="projects">
+
+    <div class="container">
+
+      <div class="projects__top  width display__flex">
+        <hr>
+
+        <div class="projects__top--content  display__flex">
+
+          <p>KNOW ABOUT US</p>
+          <h2>Learn the stories of those we've already helped</h2>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="slider cards   display__flex">
+          <div class="card card1">
+
+            <h3>Mission smile 1k: Outdoor charity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+
+              <div class="btn">
+                Donate
+              </div>
+            </a>
+          </div>
+          <div class="card card2">
+
+            <h3>Mission smile 1k: Outdoor charity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+
+              <div class="btn">
+                Donate
+              </div>
+            </a>
+          </div>
+          <div class="card card3">
+
+            <h3>Mission smile 1k: Outdoor charity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+
+              <div class="btn">
+                Donate
               </div>
             </a>
 
+          </div>
+          <div class="card card2">
+
+            <h3>Mission smile 1k: Outdoor charity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             <a href="#">
-              <div class="btn1 btn">
+
+              <div class="btn">
+                Donate
+              </div>
+            </a>
+          </div>
+          <div class="card card3">
+
+            <h3>Mission smile 1k: Outdoor charity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+            <a href="#">
+
+              <div class="btn">
                 Donate
               </div>
             </a>
           </div>
         </div>
-      </div>
-      </div>
-    </section>
-    <section class="events">
-      <div class="container  display__flex">
-        <div class="events__heading  display__flex">
-          <h2>Our Events</h2>
-        </div>
-        <div class="events__cards  display__flex">
 
-          <div class="events__cards--card  width">
-            <div class="date">
-              <h2>10</h2>
-              <p>Dec</p>
-            </div>
-            <div class="top">
-              <p>Next Event</p>
-              <h3>A day with our wonderful children</h3>
-            </div>
-            <a href="#-right">
-              <div class="btn__arrow">
-                <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
+      </div>
+    </div>
+  </section>
+
+  <!-- project ends here -->
+
+
+  <!-- what we do section starts from here  -->
+
+  <section class="we__do">
+    <div class="container">
+      <div class="we__do__section  display__flex">
+        <div class="we__do__section--left width  display__flex">
+          <div class="dot__line display__flex">
+            <hr>
+            <img src="./images/dot 1.png" alt="dot" width="14" height="15">
+          </div>
+
+          <div class="we__do__section--left--content  display__flex">
+            <p>WHAT WE DO</p>
+            <h2>Some services we provide for our children</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+              elementum tristique.</p>
+            <div class="we__do__section--left--content--bottom  display__flex">
+              <div class="we__do__section--left--content--bottom--div  display__flex">
+                <div class="logo">
+                  <img src="./images/fi-rs-chart-network.png" alt="family support" width="24" height="24">
+                </div>
+                <div class="text">
+                  <h3>Family Support</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                    eros.</p>
+                </div>
               </div>
-            </a>
+              <div class="we__do__section--left--content--bottom--div  display__flex">
+                <div class="text">
+                  <img src="./images/fi-rs-diploma.png" alt="health" width="24" height="24">
+                </div>
+                <div class="text">
+                  <h3>Family Support</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                    eros.</p>
+                </div>
+              </div>
+              <div class="we__do__section--left--content--bottom--div  display__flex">
+                <div class="logo">
+                  <img src="./images/fi-rs-pharmacy.png" alt="diploma" width="24" height="24">
+                </div>
+                <div class="text">
+                  <h3>Scholarships</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                    eros.</p>
+                </div>
+              </div>
+              <div class="we__do__section--left--content--bottom--div  display__flex">
+                <div class="logo">
+                  <img src="./images/fi-rs-stethoscope.png" alt="family support" width="24" height="24">
+                </div>
+                <div class="text">
+                  <h3>Therapy</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                    eros.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__right">
+          <img src="./images/servicesimage.webp" alt="" width="497" height="589">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- what we do section ends here  -->
+
+  <!-- blog starts from here  -->
+  <section class="latest__blog">
+    <div class="container">
+
+      <div class="latest__blog--div  display__flex">
+        <div class="latest__blog--div--heading  display__flex">
+          <div class="dot__line display__flex">
+            <hr>
+            <img src="./images/dot 1.png" alt="dot" width="14" height="15">
+          </div>
+
+          <div class="heading display__flex">
+            <p>Watch Our Latest Blogs
+            </p>
+            <h2>Check Out Our Latest Blogs</h2>
+          </div>
+        </div>
+        <div class="latest__blog--div--content">
+
+          <div class="latest__blog--div--content--cards width  display__flex">
+
+            <div class="latest__blog--div--content--cards--card  width">
+              <img src="./images/blogimage.webp" alt="img1" width="411" height="410">
+              <div class="card--text">
+                <div class="date">
+                  <h2>10</h2>
+                  <p>APR</p>
+                </div>
+                <div class="image__text  display__flex">
+                  <div class="image__text--left  display__flex">
+                    <img src="./images/fi-rr-comments.png" alt="comment" width="24" height="25">
+                    <p>2 Comments</p>
+                  </div>
+                  <div class="image__text--right  display__flex">
+                    <img src="./images/fi-rr-man-head.png" alt="head" width="24" height="25">
+                    <p>Posted by author</p>
+                  </div>
+                </div>
+
+                <p class="para">Online legal advice for asylum seekers in Greece</p>
+                <a href="#">
+                  <div class="btn">
+                    Read More
+                  </div>
+                </a>
+              </div>
+
+            </div>
+            <div class="latest__blog--div--content--cards--card  width">
+              <img src="./images/blogimage2.webp" alt="img2" width="411" height="410">
+              <div class="card--text">
+                <div class="date">
+                  <h2>10</h2>
+                  <p>APR</p>
+                </div>
+                <div class="image__text  display__flex">
+                  <div class="image__text--left  display__flex">
+                    <img src="./images/fi-rr-comments.png" alt="comment" width="24" height="25">
+                    <p>2 Comments</p>
+                  </div>
+                  <div class="image__text--right  display__flex">
+                    <img src="./images/fi-rr-man-head.png" alt="head" width="24" height="25">
+                    <p>Posted by author</p>
+                  </div>
+                </div>
+
+                <p class="para">Online legal advice for asylum seekers in Greece</p>
+                <a href="#">
+                  <div class="btn">
+                    Read More
+                  </div>
+                </a>
+              </div>
+
+            </div>
+            <div class="latest__blog--div--content--cards--card  width">
+              <img src="./images/blogimage3.webp" alt="img3" width="411" height="410">
+              <div class="card--text">
+                <div class="date">
+                  <h2>10</h2>
+                  <p>APR</p>
+                </div>
+                <div class="image__text  display__flex">
+                  <div class="image__text--left  display__flex">
+                    <img src="./images/fi-rr-comments.png" alt="comment" width="24" height="25">
+                    <p>2 Comments</p>
+                  </div>
+                  <div class="image__text--right  display__flex">
+                    <img src="./images/fi-rr-man-head.png" alt="head" width="24" height="25">
+                    <p>Posted by author</p>
+                  </div>
+                </div>
+
+                <p class="para">Online legal advice for asylum seekers in Greece</p>
+                <a href="#">
+                  <div class="btn">
+                    Read More
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+
           </div>
 
 
-          <div class="events__cards--card  width">
-            <div class="date">
-              <h2>10</h2>
-              <p>Dec</p>
-            </div>
-            <div class="top">
-              <p>Next Event</p>
-              <h3>A day with our wonderful children</h3>
-            </div>
-            <a href="#-left">
-              <div class="btn__arrow">
-                <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
-              </div>
-            </a>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- blogd ends here  -->
+
+
+  <!-- testimonial starts from here  -->
+  <section class="testimonial__section">
+    <div class="container">
+      <div class="testimonial__div">
+        <div class="latest__blog--div--heading  display__flex">
+          <div class="dot__line display__flex">
+            <hr>
+            <img src="./images/dot 1.png" alt="dot" width="14" height="15">
           </div>
 
+          <div class="heading display__flex">
+            <p>Watch Our Latest Blogs
+            </p>
+            <h2>Our customer success stories about us</h2>
+            <div class="testimonial__div--content   display__flex">
+              <div class="left__arrow">
+                <img src="./images/Arrow button.svg" alt="arrow left" width="56" height="57">
+              </div>
+              <div class="center__div  display__flex">
+                <div class="center__div--img">
+                  <div><img src="./images/tesimonailuser.webp" alt="man image" width="103" height="106"></div>
+                  <h3>Smith Murthy</h3>
+                  <p>DIRECTOR</p>
+                </div>
+                <div class="center__div--para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    <br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+                    vitae erat.
+                  </p>
+                </div>
+              </div>
+              <div class="right__Arrow">
+                <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- tesimonail ends here  -->
+
+  <!-- donates starts here  -->
+  <section class="donate">
+    <div class="container">
+      <div class="background__div">
+        <h2>You can contribute to provide a place for children with special needs!</h2>
+
+        <div class="buttons  display__flex">
+          <a href="#">
+            <div class="btn">
+              join as a volunteer
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="btn1 btn">
+              Donate
+            </div>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </section>
+
+  <!-- donate ends here  -->
+
+  <!-- events starts from here  -->
+  <section class="events">
+    <div class="container  display__flex">
+      <div class="events__heading  display__flex">
+        <h2>Our Events</h2>
+      </div>
+      <div class="events__cards  display__flex">
+
+        <div class="events__cards--card  width">
+          <div class="date">
+            <h2>10</h2>
+            <p>Dec</p>
+          </div>
+          <div class="top">
+            <p>Next Event</p>
+            <h3>A day with our wonderful children</h3>
+          </div>
+          <a href="#-right">
+            <div class="btn__arrow">
+              <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
+            </div>
+          </a>
+        </div>
+
+
+        <div class="events__cards--card  width">
+          <div class="date">
+            <h2>10</h2>
+            <p>Dec</p>
+          </div>
+          <div class="top">
+            <p>Next Event</p>
+            <h3>A day with our wonderful children</h3>
+          </div>
+          <a href="#-left">
+            <div class="btn__arrow">
+              <img src="./images/Arrow button (1).svg" alt="arrow right" width="56" height="57">
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- event ends here  -->
+
+
+  <!-- footer starts from here  -->
   <footer>
     <div class="container">
       <div class="footer__content  display__flex">
@@ -748,24 +792,24 @@
           </div>
           <div class="contact__div  display__flex">
             <p>Contact</p>
-           
-              <div class="logo__text display__flex">
-                <img src="./images/fi-rr-envelope-plus.svg" alt="mail"  width="18" height="19">
-                <p>info@africanno.com</p>
+
+            <div class="logo__text display__flex">
+              <img src="./images/fi-rr-envelope-plus.svg" alt="mail" width="18" height="19">
+              <p>info@africanno.com</p>
+            </div>
+            <div class="display__flex">
+              <img src="./images/fi-rr-call-incoming.svg" alt="call" width="18" height="19">
+              <p>+234 090323430130</p>
+            </div>
+            <div>
+              <p>Connect</p>
+              <div class=" icons display__flex">
+                <img src="./images/Vector.svg" alt="x" width="24" height="25">
+                <img src="./images/jam_facebook-circle.svg" alt="facebook" width="24" height="25">
+                <img src="./images/fe_instagram.svg" alt="insta" width="24" height="25">
+                <img src="./images/typcn_social-linkedin-circular.svg" alt="linkedin" width="24" height="25">
               </div>
-              <div class="display__flex">
-                <img src="./images/fi-rr-call-incoming.svg" alt="call" width="18" height="19">
-                <p>+234 090323430130</p>
-              </div>
-              <div>
-                <p>Connect</p>
-                <div class=" icons display__flex">
-                  <img src="./images/Vector.svg" alt="x" width="24" height="25">
-                  <img src="./images/jam_facebook-circle.svg" alt="facebook" width="24" height="25">
-                  <img src="./images/fe_instagram.svg" alt="insta" width="24" height="25">
-                  <img src="./images/typcn_social-linkedin-circular.svg" alt="linkedin" width="24" height="25">
-                </div>
-              </div>
+            </div>
 
           </div>
 
@@ -774,7 +818,7 @@
           <p>Newsletter</p>
           <h3>Subscribe to get latest updates</h3>
           <form action="submit" class="display__flex">
-            <input type="email" id="emailid" name="emailid" required  placeholder="Email">
+            <input type="email" id="emailid" name="emailid" required placeholder="Email">
             <button>subscribe</button>
           </form>
         </div>
@@ -784,6 +828,7 @@
     </div>
   </footer>
 
+  <!-- footer ends here  -->
 </body>
 
 </html>
